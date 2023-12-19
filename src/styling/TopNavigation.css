@@ -1,0 +1,23 @@
+.dropdown1,
+.dropdown1:active,
+.dropdown1:focus,
+.dropdown1:hover{
+    background-color: transparent !important;
+}
+
+.dropdown1.active {
+    font-weight: bold;
+}
+
+.dropdown1:hover{
+    background-color: grey !important;
+}
+.navbar {
+    background-color: transparent !important; /* Override Bootstrap's styles */
+    box-shadow: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+}

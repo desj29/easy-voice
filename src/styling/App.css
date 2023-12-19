@@ -1,0 +1,50 @@
+.siteContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contentWrap {
+    flex: 1;
+}
+.chatButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #2f617f;
+    color: #fff;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chatButton:hover {
+    background-color: #0056b3;
+}
+.slideIn{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #0f0f0f;
+    transform-origin: bottom;
+    z-index: 2000;
+}
+.slideOut{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #0f0f0f;
+    transform-origin: top;
+    z-index: 2000;
+}

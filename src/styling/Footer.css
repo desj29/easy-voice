@@ -1,0 +1,9 @@
+.footer{
+    background-color: #333333;
+}
+.vl{
+    border-left: 2px solid white;
+}
+.linkText:hover{
+    cursor: pointer;
+}

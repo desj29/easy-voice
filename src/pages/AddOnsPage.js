@@ -1,0 +1,40 @@
+import {Col, Container, Row, Table} from "react-bootstrap";
+import "../styling/AddOnsPage.css";
+import React, {useState} from "react";
+import transition from "../transition";
+import {ADDONS} from "../ADDONS";
+import AddOnCard from "../components/AddOnCard";
+
+
+
+const AddOnsPage = () => {
+
+    return (
+        <>
+            <Row className="align-items-center addonsPageHeader">
+                <div className="black-overlay"></div>
+                <h1 className="text-white text-center">Customizable Add-Ons for Enhanced Business Solutions</h1>
+            </Row>
+            <Container className="py-5">
+                <Row>
+                    <Col className="text-center textLightRow m-3" sm={12}>
+                        <h2>Build and Expand Your Business with Confidence.</h2>
+                        <p>Find the perfect plan tailored to your specific business requirements while optimizing
+                            costs.</p>
+                    </Col>
+                    {ADDONS.map((addons) =>
+                        <Col lg={3} md={6}>
+                            <AddOnCard data={addons}/>
+                        </Col>
+
+                    )}
+
+
+                </Row>
+            </Container>
+        </>
+
+    );
+}
+
+export default transition(AddOnsPage);

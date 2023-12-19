@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="52c793fc-f9c0-4109-8cbb-aefdc2518325" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/ContactArt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart/CartAddonItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/CartAddonItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ContactPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ContactPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styling/ContactPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styling/ContactPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styling/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styling/Footer.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2WG0Mmo5VIH6eberpa2n8mjYbIx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/eric.desjardins/WebstormProjects/easy-voice/src/components/cart&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\eric.desjardins\WebstormProjects\easy-voice\src\components\cart" />
+      <recent name="C:\Users\eric.desjardins\WebstormProjects\easy-voice\src\components" />
+      <recent name="C:\Users\eric.desjardins\WebstormProjects\easy-voice\src" />
+      <recent name="C:\Users\eric.desjardins\WebstormProjects\easy-voice\src\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\eric.desjardins\WebstormProjects\easy-voice\src\assets" />
+      <recent name="C:\Users\eric.desjardins\WebstormProjects\easy-voice\src\assets\carousel" />
+      <recent name="C:\Users\eric.desjardins\WebstormProjects\easy-voice\src\assets\logo" />
+      <recent name="C:\Users\eric.desjardins\WebstormProjects\easy-voice\src\assets\headers" />
+      <recent name="C:\Users\eric.desjardins\WebstormProjects\easy-voice\src\components\layout" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\eric.desjardins\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="C:\Users\eric.desjardins\WebstormProjects\easy-voice" />
+          <option name="myCopyRoot" value="C:\Users\eric.desjardins\WebstormProjects\easy-voice" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="C:\Users\eric.desjardins\WebstormProjects\easy-voice" />
+          <option name="myCopyRoot" value="C:\Users\eric.desjardins\WebstormProjects\easy-voice" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="52c793fc-f9c0-4109-8cbb-aefdc2518325" name="Changes" comment="" />
+      <created>1696343566131</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696343566131</updated>
+      <workItem from="1696343568575" duration="87784000" />
+      <workItem from="1699363204418" duration="30540000" />
+      <workItem from="1699917799715" duration="26826000" />
+      <workItem from="1701383013200" duration="46987000" />
+      <workItem from="1702648123062" duration="10051000" />
+    </task>
+    <task id="LOCAL-00001" summary="commit">
+      <option name="closed" value="true" />
+      <created>1696345145681</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696345145681</updated>
+    </task>
+    <task id="LOCAL-00002" summary="commit">
+      <option name="closed" value="true" />
+      <created>1696520386994</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696520386994</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commit">
+      <option name="closed" value="true" />
+      <created>1696872854533</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696872854533</updated>
+    </task>
+    <task id="LOCAL-00004" summary="commit">
+      <option name="closed" value="true" />
+      <created>1697257194582</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697257194582</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit">
+      <option name="closed" value="true" />
+      <created>1697656180426</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697656180426</updated>
+    </task>
+    <task id="LOCAL-00006" summary="commit">
+      <option name="closed" value="true" />
+      <created>1698444608665</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698444608665</updated>
+    </task>
+    <task id="LOCAL-00007" summary="commit">
+      <option name="closed" value="true" />
+      <created>1699131248493</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699131248493</updated>
+    </task>
+    <task id="LOCAL-00008" summary="commit">
+      <option name="closed" value="true" />
+      <created>1699569980460</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699569980460</updated>
+    </task>
+    <task id="LOCAL-00009" summary="commit">
+      <option name="closed" value="true" />
+      <created>1701383328478</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701383328478</updated>
+    </task>
+    <task id="LOCAL-00010" summary="commit">
+      <option name="closed" value="true" />
+      <created>1701728406033</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1701728406033</updated>
+    </task>
+    <task id="LOCAL-00011" summary="commit">
+      <option name="closed" value="true" />
+      <created>1701730939851</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1701730939851</updated>
+    </task>
+    <task id="LOCAL-00012" summary="commit">
+      <option name="closed" value="true" />
+      <created>1701743348397</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1701743348397</updated>
+    </task>
+    <task id="LOCAL-00013" summary="commit">
+      <option name="closed" value="true" />
+      <created>1701744585746</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1701744585746</updated>
+    </task>
+    <task id="LOCAL-00014" summary="commit">
+      <option name="closed" value="true" />
+      <created>1701898772425</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1701898772425</updated>
+    </task>
+    <task id="LOCAL-00015" summary="commit">
+      <option name="closed" value="true" />
+      <created>1702420926213</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1702420926213</updated>
+    </task>
+    <task id="LOCAL-00016" summary="commit">
+      <option name="closed" value="true" />
+      <created>1702652160335</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1702652160335</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+  </component>
+</project>

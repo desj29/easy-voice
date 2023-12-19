@@ -1,0 +1,37 @@
+.numberInputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.numberInput {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 0 5px;
+}
+.trash:hover{
+    cursor: pointer;
+}
+
+.CheckoutHeader {
+    position: relative;
+    background: url("../assets/headers/CheckoutHeader.jpeg") no-repeat center;
+    background-size: cover;
+    height: 594px;
+}
+.CheckoutHeader::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Black with 25% opacity */
+    z-index: 1;
+}
+.CheckoutHeader h1 {
+    position: relative;
+    z-index: 2;
+    color: white; /* or any color you prefer */
+}
