@@ -46,7 +46,7 @@ export default function TopNavigation() {
                             </NavDropdown>
 
                             <LinkContainer to="/contact">
-                                <Nav.Link>Contact Us</Nav.Link>
+                                <Nav.Link><span className="text-nowrap">Contact Us</span></Nav.Link>
                             </LinkContainer>
 
                             <LinkContainer to="/cart">

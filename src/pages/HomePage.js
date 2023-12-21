@@ -14,7 +14,7 @@ import transition from "../transition";
 const HomePage = () => {
     return (
         <>
-            <Carousel fade className="bg-dark w-100">
+            <Carousel fade className="bg-dark w-100 d-none d-md-block">
                 <Carousel.Item>
                     <Image className="opacity-25" src={voipImg} alt="voip image" fluid/>
                     <Carousel.Caption>
@@ -49,10 +49,11 @@ const HomePage = () => {
                             </motion.h1>
                             <hr className="styledGradient"/>
                             <p className="lead">
-                                Harness the power of advanced VOIP, expansive NETWORK capabilities, and scalable CLOUD
-                                solutions. Discover our range of voice plans, add-ons, and long-term contracts designed
-                                for seamless communication. Easy Voice bridges the communication gap for businesses and
-                                fosters seamless interactions across platforms.
+                                For over 15 years, Easy Voice LLC has been a dedicated supporter of the business sector, providing a range of comprehensive solutions for enterprises. Our offerings include versatile Cloud Services, advanced Cloud-Based PBX Systems, and customized development solutions tailored to meet diverse business needs.
+                                {/*Harness the power of advanced VOIP, expansive NETWORK capabilities, and scalable CLOUD*/}
+                                {/*solutions. Discover our range of voice plans, add-ons, and long-term contracts designed*/}
+                                {/*for seamless communication. Easy Voice bridges the communication gap for businesses and*/}
+                                {/*fosters seamless interactions across platforms.*/}
                             </p>
                         </div>
                     </Col>

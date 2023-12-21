@@ -36,14 +36,21 @@ const PlanPage = () => {
                             }}>Yearly</Button>
                         </ButtonGroup>
                     </Col>
+                </Row>
+            </Container>
+            <Container>
+                <Row>
                     {/* Map through PRODUCTS to display each plan */}
                     {PRODUCTS.map((product) =>
-                            <Col lg={3} md={6}>
-                                <PlanCard data={product} yearly={yearly}/>
-                            </Col>
+                        <Col lg={3} md={6} className="d-flex">
+                            <PlanCard data={product} yearly={yearly}/>
+                        </Col>
 
-                        )}
+                    )}
                 </Row>
+            </Container>
+
+
                 {/* Feature comparison table for different packages */}
                 <Row className="mt-5">
                     <Table hover>
@@ -208,7 +215,6 @@ const PlanPage = () => {
                         </tbody>
                     </Table>
                 </Row>
-            </Container>
         </>
 
     );

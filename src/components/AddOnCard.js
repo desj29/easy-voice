@@ -8,7 +8,7 @@ import {FaCartShopping} from "react-icons/fa6";
 import { motion } from "framer-motion"
 
 export default function AddOnCard({ data }){
-    const {id, productName, price, image} = data;
+    const {id, productName, price, image, description, per} = data;
     const navigate = useNavigate();
     const {addToAddonCart, cartAddonItems} = useContext(ShopContext);
 
@@ -19,9 +19,9 @@ export default function AddOnCard({ data }){
                 <Card.Title className="text-center">
                     {productName}
                     <br/>
-                    <Badge pill>${price.toFixed(2)}</Badge>
+                    <Badge pill>${price.toFixed(2)} /{per}</Badge>
                 </Card.Title>
-                <p>This is a great item. It is really cool. It is so cheap and cool. This is great.</p>
+                <p>{description}</p>
             </Card.Body>
 
             <Card.Footer className="text-center">

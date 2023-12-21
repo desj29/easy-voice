@@ -51,7 +51,8 @@ export const ShopContextProvider = (props) => {
         for (const item in cartAddonItems){
             if(cartAddonItems[item] > 0){
                 let itemInfo = ADDONS.find((product) => product.id === Number(item));
-                totalAmount += cartAddonItems[item] * itemInfo.price;
+                let yearlyMultiplier = yearlyStates[item] ? 10 : 1;
+                totalAmount += cartAddonItems[item] * itemInfo.price * yearlyMultiplier;
             }
         }
         return (totalAmount).toFixed(2);
@@ -88,11 +89,15 @@ export const ShopContextProvider = (props) => {
         setCartAddonItems((prev)=> ({...prev, [itemId]: prev[itemId] - 1}))
     };
 
+    const updateAddonCount = (newAmount, itemId) => {
+        setCartAddonItems((prev) => ({...prev, [itemId]: newAmount}))
+    }
+
     const updateCartItemCount = (newAmount, itemId) => {
         setCartPlanItems((prev) => ({...prev, [itemId]: newAmount}))
     }
 
-    const contextValue = {cartPlanItems: cartPlanItems, cartAddonItems: cartAddonItems, addToPlanCart, removeFromPlanCart, updateCartItemCount, getTotalCartAmount, addPhone, removePhone, updatePhoneCount, numPhones, updateYearlyState, yearlyStates, addToAddonCart, removeFromAddonCart};
+    const contextValue = {cartPlanItems: cartPlanItems, cartAddonItems: cartAddonItems, addToPlanCart, removeFromPlanCart, updateCartItemCount, getTotalCartAmount, addPhone, removePhone, updatePhoneCount, numPhones, updateYearlyState, yearlyStates, addToAddonCart, removeFromAddonCart, updateAddonCount};
 
     console.log(cartPlanItems);
     return (

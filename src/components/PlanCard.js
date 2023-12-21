@@ -1,16 +1,17 @@
-import {Badge, Button, Card, Container} from "react-bootstrap";
+import {Badge, Button, Card, Col, Container} from "react-bootstrap";
 import {BsCheck2Square} from "react-icons/bs";
 import React, {useContext} from "react";
 import {ShopContext} from "../context/shop-context";
 import "../styling/PlanAndCart.css";
 import {useNavigate} from "react-router-dom";
 import {FaCartShopping} from "react-icons/fa6";
+import {PRODUCTS} from "../PRODUCTS";
 
 
 
 
 export default function PlanCard({ data, yearly, flip }){
-    const {id, badge, productName, price} = data;
+    const {id, badge, productName, price, features} = data;
     const navigate = useNavigate();
     const {addToPlanCart,  cartPlanItems, updatePhoneCount, numPhones} = useContext(ShopContext);
 
@@ -39,27 +40,23 @@ export default function PlanCard({ data, yearly, flip }){
             <Card.Body>
 
                 <h6>Includes:</h6>
-                <p>
-                    <BsCheck2Square className="text-success"/> 12 Extensions <br/>
-                    <BsCheck2Square className="text-success"/> Fully-Featured<br/>
-                    <BsCheck2Square className="text-success"/> Unlimited Simultaneous Calls<br/>
-                    <BsCheck2Square className="text-success"/> Addons On Demand<br/>
-                    <BsCheck2Square className="text-success"/> Free Modules Available<br/>
-                    <BsCheck2Square className="text-success"/> Always Up To Date<br/>
-                    <BsCheck2Square className="text-success"/> 2 VitXi WebRTC Clients<br/>
-                    <BsCheck2Square className="text-success"/> Provision up to 20 Devices<br/>
-                    <BsCheck2Square className="text-success"/> Forum Support
-                </p>
+                    {features.map((feature) =>
+                        <>
+                            <BsCheck2Square className="text-success"/> {feature}<br/>
+                        </>
+
+
+                    )}
 
             </Card.Body>
 
             {cartPlanItems[id] === 0 ? (
-                <Button className="genericButton ms-auto me-auto mb-3 ps-3 pe-3" onClick={() => addToPlanCart(id)}>
+                <Button className="genericButton ms-auto me-auto m-3 ps-3 pe-3" onClick={() => addToPlanCart(id)}>
                     Add To Cart
                     {/*{cartPlanItems[id]> 0 && <>({cartPlanItems[id]})</>}*/}
                 </Button>
             ) : (
-                <Button className="genericButton ms-auto me-auto mb-3 ps-3 pe-3" onClick={() => navigate('/cart')}>
+                <Button className="genericButton ms-auto me-auto m-3 ps-3 pe-3" onClick={() => navigate('/cart')}>
                     <FaCartShopping/> View Cart
                 </Button>
             )}

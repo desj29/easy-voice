@@ -32,7 +32,7 @@ const CheckOutPage = () => {
                     <tr>
                         <th>Product</th>
                         <th>Price</th>
-                        <th>Number of Phones</th>
+                        <th>Quantity</th>
                         <th>Pay Period</th>
                         <th>Subtotal</th>
                         <th></th>

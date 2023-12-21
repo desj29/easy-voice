@@ -22,14 +22,14 @@ const AddOnsPage = () => {
                         <p>Find the perfect plan tailored to your specific business requirements while optimizing
                             costs.</p>
                     </Col>
+                </Row>
+                <Row>
                     {ADDONS.map((addons) =>
-                        <Col lg={3} md={6}>
+                        <Col className="d-flex" lg={4} md={6}>
                             <AddOnCard data={addons}/>
                         </Col>
 
                     )}
-
-
                 </Row>
             </Container>
         </>
