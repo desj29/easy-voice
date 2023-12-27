@@ -55,6 +55,9 @@ export default function TopNavigation() {
                                     <LinkContainer to="/contact">
                                         <Nav.Link><span className="text-nowrap">Contact Us</span></Nav.Link>
                                     </LinkContainer>
+                                    <Nav.Link as="a" href="https://pbx.easyvoice.us/" target="_blank" rel="noopener noreferrer">
+                                        <span className="text-nowrap">Log In</span>
+                                    </Nav.Link>
 
                                     <LinkContainer to="/cart">
                                         <Nav.Link><BsCart size={24}/> </Nav.Link>
