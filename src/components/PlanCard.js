@@ -25,21 +25,21 @@ export default function PlanCard({ data, yearly, flip }){
     }
 
     return(
-        <Card className="m-2">
-            <Card.Header>
-                <h1 className="text-center">{id === 2 ? <>Gold <br/>Package</> : productName}</h1>
-                <h3 className="text-center"><Badge pill
-                                                   className={badge}>${yearly ? (price*10*numPhones[id]).toFixed(2) : (price*numPhones[id]).toFixed(2)}{yearly ? " /year" : " /month"}</Badge>
-                </h3>
+            <Card className="m-2 plan-card">
+                <Card.Header>
+                    <h1 className="text-center">{id === 2 ? <>Gold <br/>Package</> : productName}</h1>
+                    <h3 className="text-center"><Badge pill
+                                                       className={badge}>${yearly ? (price*10*numPhones[id]).toFixed(2) : (price*numPhones[id]).toFixed(2)}{yearly ? " /year" : " /month"}</Badge>
+                    </h3>
 
-                <div className="numberInputContainer">
-                    <h6>Number of phones:</h6>
-                    <input min="1" className="numberInput" type="number" value={numPhones[id]} onChange={(e) => handleInputChange(e, id)}/>
-                </div>
-            </Card.Header>
-            <Card.Body>
+                    <div className="numberInputContainer">
+                        <h6>Number of phones:</h6>
+                        <input min="1" className="numberInput" type="number" value={numPhones[id]} onChange={(e) => handleInputChange(e, id)}/>
+                    </div>
+                </Card.Header>
+                <Card.Body>
 
-                <h6>Includes:</h6>
+                    <h6>Includes:</h6>
                     {features.map((feature) =>
                         <>
                             <BsCheck2Square className="text-success"/> {feature}<br/>
@@ -48,18 +48,19 @@ export default function PlanCard({ data, yearly, flip }){
 
                     )}
 
-            </Card.Body>
+                </Card.Body>
 
-            {cartPlanItems[id] === 0 ? (
-                <Button className="genericButton ms-auto me-auto m-3 ps-3 pe-3" onClick={() => addToPlanCart(id)}>
-                    Add To Cart
-                    {/*{cartPlanItems[id]> 0 && <>({cartPlanItems[id]})</>}*/}
-                </Button>
-            ) : (
-                <Button className="genericButton ms-auto me-auto m-3 ps-3 pe-3" onClick={() => navigate('/cart')}>
-                    <FaCartShopping/> View Cart
-                </Button>
-            )}
-        </Card>
+                {cartPlanItems[id] === 0 ? (
+                    <Button className="genericButton ms-auto me-auto m-3 ps-3 pe-3" onClick={() => addToPlanCart(id)}>
+                        Add To Cart
+                        {/*{cartPlanItems[id]> 0 && <>({cartPlanItems[id]})</>}*/}
+                    </Button>
+                ) : (
+                    <Button className="genericButton ms-auto me-auto m-3 ps-3 pe-3" onClick={() => navigate('/cart')}>
+                        <FaCartShopping/> View Cart
+                    </Button>
+                )}
+            </Card>
+
     );
 }

@@ -40,18 +40,17 @@ const PlanPage = () => {
             </Container>
             <Container>
                 <Row>
-                    {/* Map through PRODUCTS to display each plan */}
                     {PRODUCTS.map((product) =>
-                        <Col lg={3} md={6} className="d-flex">
+                        <Col xl={3} md={6} className="mb-3">
                             <PlanCard data={product} yearly={yearly}/>
                         </Col>
-
                     )}
                 </Row>
             </Container>
 
 
-                {/* Feature comparison table for different packages */}
+
+            <Container>
                 <Row className="mt-5">
                     <Table hover>
                         <thead>
@@ -60,161 +59,110 @@ const PlanPage = () => {
                             <th><Badge pill className="silverBadge">Silver Package</Badge></th>
                             <th><Badge pill className="goldBadge">Gold Package</Badge></th>
                             <th><Badge pill className="diamondBadge">Diamond Package</Badge></th>
-                            <th><Badge pill className="blackBadge">Carrier Package</Badge></th>
+                            <th><Badge pill className="blackBadge">Enterprise Package</Badge></th>
                         </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Extensions</td>
-                                <td>12</td>
-                                <td>Unlimited</td>
-                                <td>Unlimited</td>
-                                <td>Unlimited</td>
-                            </tr>
-                            <tr>
-                                <td>Concurrent Calls</td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                            </tr>
-                            <tr>
-                                <td>Fully Features</td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                            </tr>
-                            <tr>
-                                <td>Call Center</td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                            </tr>
-                            <tr>
-                                <td>Voice Mail</td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                            </tr>
-                            <tr>
-                                <td>Firewall</td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                            </tr>
-                            <tr>
-                                <td>Intrusion Detection</td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                            </tr>
-                            <tr>
-                                <td>Call Encryption</td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                            </tr>
-                            <tr>
-                                <td>Video Conference</td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                            </tr>
-                            <tr>
-                                <td>CDR</td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                            </tr>
-                            <tr>
-                                <td>User Portal</td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                            </tr>
-                            <tr>
-                                <td>Support Audio Codes</td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                            </tr>
-                            <tr>
-                                <td>Support Video Codes</td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                            </tr>
-                            <tr>
-                                <td>Call Recording</td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                            </tr>
-                            <tr>
-                                <td>Music On Hold From Streaming</td>
-                                <td><FaXmark className="text-danger"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                            </tr>
-                            <tr>
-                                <td>Multiple Emails In The Extension</td>
-                                <td><FaXmark className="text-danger"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                            </tr>
-                            <tr>
-                                <td>CEL CDR Events Report</td>
-                                <td><FaXmark className="text-danger"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                            </tr>
-                            <tr>
-                                <td>Voicemail MP3 Attachment</td>
-                                <td><FaXmark className="text-danger"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                            </tr>
-                            <tr>
-                                <td>Multiple Emails Settings For VM</td>
-                                <td><FaXmark className="text-danger"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                            </tr>
-                            <tr>
-                                <td>Phone Books Add/Edit/Delete External Contacts.</td>
-                                <td><FaXmark className="text-danger"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                            </tr>
-                            <tr>
-                                <td>Time Conditions TZ Setting.</td>
-                                <td><FaXmark className="text-danger"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                                <td><FaCheck className="text-success"/></td>
-                            </tr>
-
+                        {/*Unlimited Extensions*/}
+                        {/*Fully Featured*/}
+                        {/*Unlimited Simultaneous Calls*/}
+                        {/*Addons On Demand*/}
+                        {/*Free Modules Available*/}
+                        {/*Always have latest version*/}
+                        {/*Unlimited WebRTC Clients*/}
+                        {/*Unlimited Vital PBX Connect (IPhone and Android Client)*/}
+                        {/*Microsoft Teams Integration*/}
+                        {/*CRM Integration*/}
+                        {/*Auto Provisioning*/}
+                        {/*Ticket Support*/}
+                        <tr>
+                            <td>Unlimited Extensions</td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                        </tr>
+                        <tr>
+                            <td>Fully Featured</td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                        </tr>
+                        <tr>
+                            <td>Unlimited Simultaneous Calls</td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                        </tr>
+                        <tr>
+                            <td>Addons On Demand</td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                        </tr>
+                        <tr>
+                            <td>Free Modules Available</td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                        </tr>
+                        <tr>
+                            <td>Latest Version</td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                        </tr>
+                        <tr>
+                            <td>Auto Provisioning</td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                        </tr>
+                        <tr>
+                            <td>Ticket Support</td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                        </tr>
+                        <tr>
+                            <td>Unlimited VitXi WebRTC (Soft Phones)</td>
+                            <td><FaXmark className="text-danger"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                        </tr>
+                        <tr>
+                            <td>Unlimited Vital PBX Connect (IPhone and Android Client)</td>
+                            <td><FaXmark className="text-danger"/></td>
+                            <td><FaXmark className="text-danger"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                        </tr>
+                        <tr>
+                            <td>CRM Integration</td>
+                            <td><FaXmark className="text-danger"/></td>
+                            <td><FaXmark className="text-danger"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                        </tr>
+                        <tr>
+                            <td>Microsoft Teams Integration</td>
+                            <td><FaXmark className="text-danger"/></td>
+                            <td><FaXmark className="text-danger"/></td>
+                            <td><FaXmark className="text-danger"/></td>
+                            <td><FaCheck className="text-success"/></td>
+                        </tr>
                         </tbody>
                     </Table>
                 </Row>
+            </Container>
         </>
 
     );
