@@ -5,23 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52c793fc-f9c0-4109-8cbb-aefdc2518325" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/AdobeStock_523407917_Editorial_Use_Only.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/AdobeStock_579459725.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ADDONS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ADDONS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PRODUCTS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PRODUCTS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/easyvoiceLocation.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddOnCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddOnCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PlanCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PlanCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cart/CartAddonItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/CartAddonItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/TopNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/TopNavigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/shop-context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/shop-context.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AddOnsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AddOnsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/CheckOutPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CheckOutPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ContactPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ContactPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/PlanPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PlanPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styling/TopNavigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styling/TopNavigation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transition.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/transition.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +24,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
@@ -49,23 +37,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/eric.desjardins/WebstormProjects/easy-voice/src/components/cart",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/eric.desjardins/WebstormProjects/easy-voice/src/components/cart&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\eric.desjardins\WebstormProjects\easy-voice\src\components\cart" />
@@ -74,9 +62,9 @@
       <recent name="C:\Users\eric.desjardins\WebstormProjects\easy-voice\src\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\eric.desjardins\WebstormProjects\easy-voice\src\assets\logo" />
       <recent name="C:\Users\eric.desjardins\WebstormProjects\easy-voice\src\assets" />
       <recent name="C:\Users\eric.desjardins\WebstormProjects\easy-voice\src\assets\carousel" />
-      <recent name="C:\Users\eric.desjardins\WebstormProjects\easy-voice\src\assets\logo" />
       <recent name="C:\Users\eric.desjardins\WebstormProjects\easy-voice\src\assets\headers" />
       <recent name="C:\Users\eric.desjardins\WebstormProjects\easy-voice\src\components\layout" />
     </key>
@@ -97,7 +85,7 @@
       <workItem from="1699363204418" duration="30540000" />
       <workItem from="1699917799715" duration="26826000" />
       <workItem from="1701383013200" duration="46987000" />
-      <workItem from="1702648123062" duration="26734000" />
+      <workItem from="1702648123062" duration="39346000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -251,7 +239,23 @@
       <option name="project" value="LOCAL" />
       <updated>1703104857757</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="commit">
+      <option name="closed" value="true" />
+      <created>1703188614638</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1703188614638</updated>
+    </task>
+    <task id="LOCAL-00021" summary="commit">
+      <option name="closed" value="true" />
+      <created>1703710896837</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1703710896837</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
