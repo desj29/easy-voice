@@ -52,6 +52,9 @@ export default function Footer() {
                             </LinkContainer>
                     </Col>
                 </Row>
+                <Row>
+                    <p className="text-white text-center copyRight">© 2023 Easy Voice, LLC.  Intellectual Property. All rights reserved.</p>
+                </Row>
             </Container>
         </Container>
 
