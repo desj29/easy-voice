@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="52c793fc-f9c0-4109-8cbb-aefdc2518325" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transition.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/transition.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/TopNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/TopNavigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HomePage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +86,7 @@
       <workItem from="1699363204418" duration="30540000" />
       <workItem from="1699917799715" duration="26826000" />
       <workItem from="1701383013200" duration="46987000" />
-      <workItem from="1702648123062" duration="39346000" />
+      <workItem from="1702648123062" duration="42527000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -255,7 +256,23 @@
       <option name="project" value="LOCAL" />
       <updated>1703710896837</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="commit">
+      <option name="closed" value="true" />
+      <created>1703713962824</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1703713962824</updated>
+    </task>
+    <task id="LOCAL-00023" summary="commit">
+      <option name="closed" value="true" />
+      <created>1703715605706</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1703715605706</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

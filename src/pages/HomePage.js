@@ -65,8 +65,7 @@ const HomePage = () => {
                             <Card.Body>
                                 <Card.Title>Plans</Card.Title>
                                 <Card.Text>
-                                    This is a wider card with supporting text below as a natural lead-in
-                                    to additional content. This content is a little bit longer.
+                                    Choose from a variety of plans tailored for different business sizes. Our plans offer essential communication tools like HD voice calls and video conferencing, backed by reliable support. Ideal for seamless day-to-day business communications.
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
@@ -80,12 +79,11 @@ const HomePage = () => {
                             <Card.Body>
                                 <Card.Title>Add-Ons</Card.Title>
                                 <Card.Text>
-                                    This card has supporting text below as a natural lead-in to
-                                    additional content.{' '}
+                                    Customize your plan with add-ons. These features enhance your communication capabilities and are perfect for businesses looking to optimize their communication systems.
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <Button className="genericButton" href="#">
+                                <Button className="genericButton" href="/addons">
                                     Learn More
                                 </Button>
                             </Card.Footer>
@@ -93,13 +91,12 @@ const HomePage = () => {
                         <Card className="border-black">
                             <Card.Img variant="top" src={team}/>
                             <Card.Body>
-                                <Card.Title>3 year contracts</Card.Title>
+                                <Card.Title>Contracts</Card.Title>
                                 <Card.Text>
-                                    This is a wider card with supporting text below as a natural lead-in
-                                    to additional content. This card has even longer content than the
-                                    first to show that equal height action.
+                                    Discover the benefits of our long-term contracts, specially designed for businesses seeking stability and value. Opt for our 3 to 5-year plans and enjoy substantial discounts, ensuring cost-effective communication solutions over the long term. Please contact a team member if interested.
                                 </Card.Text>
                             </Card.Body>
+
                             <Card.Footer>
                                 <Button className="genericButton" href="#">
                                     Learn More
@@ -109,26 +106,26 @@ const HomePage = () => {
                     </CardGroup>
                 </Row>
             </Container>
-            <Container className="roundTop">
-                <Row className="py-4 align-items-center">
-                    <Col lg={6} className="order-lg-2">
-                        <Image className="mx-auto" src={devices} alt="Seamless integration" fluid/>
-                    </Col>
-                    <Col lg={6} className="order-lg-1">
-                        <div className="text-center">
+            {/*<Container className="roundTop">*/}
+                {/*<Row className="py-4 align-items-center">*/}
+                {/*    <Col lg={6} className="order-lg-2">*/}
+                {/*        <Image className="mx-auto" src={devices} alt="Seamless integration" fluid/>*/}
+                {/*    </Col>*/}
+                {/*    <Col lg={6} className="order-lg-1">*/}
+                {/*        <div className="text-center">*/}
 
-                            <h2 className="mb-3">Find Your Perfect Business Communication Solution</h2>
-                            <p className="mb-4">
-                                Unlock the full potential of your business with Easy Voice's comprehensive suite of
-                                digital communication tools. Our solutions are crafted to enhance reliability,
-                                streamline operations, and pave the way for scalable growth. Step into the future of
-                                seamless connectivity with a plan tailored to your unique needs.
-                            </p>
-                            <Button variant="outline-light" className="genericButton" href="/pricing">View
-                                Plans</Button>
-                        </div>
-                    </Col>
-                </Row>
+                {/*            <h2 className="mb-3">Find Your Perfect Business Communication Solution</h2>*/}
+                {/*            <p className="mb-4">*/}
+                {/*                Unlock the full potential of your business with Easy Voice's comprehensive suite of*/}
+                {/*                digital communication tools. Our solutions are crafted to enhance reliability,*/}
+                {/*                streamline operations, and pave the way for scalable growth. Step into the future of*/}
+                {/*                seamless connectivity with a plan tailored to your unique needs.*/}
+                {/*            </p>*/}
+                {/*            <Button variant="outline-light" className="genericButton" href="/pricing">View*/}
+                {/*                Plans</Button>*/}
+                {/*        </div>*/}
+                {/*    </Col>*/}
+                {/*</Row>*/}
                 {/*<Row className="darkRow py-4">*/}
                 {/*    <Col lg={6} className="my-auto">*/}
                 {/*        <img className="img-fluid mx-auto" src={phone} alt="Advanced communication technology"/>*/}
@@ -145,7 +142,7 @@ const HomePage = () => {
                 {/*</Row>*/}
 
 
-            </Container>
+            {/*</Container>*/}
 
             {/*<Container fluid>*/}
             {/*    <Row className="p-5">*/}

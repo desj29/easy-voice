@@ -47,9 +47,6 @@ export default function TopNavigation() {
                                         <LinkContainer to="/addons">
                                             <NavDropdown.Item className="dropdown1">Add-Ons</NavDropdown.Item>
                                         </LinkContainer>
-                                        <LinkContainer to="/">
-                                            <NavDropdown.Item className="dropdown1">Products</NavDropdown.Item>
-                                        </LinkContainer>
                                     </NavDropdown>
 
                                     <LinkContainer to="/contact">
