@@ -1,1 +1,46 @@
-node_modules
+# Dependency directories
+node_modules/
+bower_components/
+
+# Build output
+build/
+dist/
+
+# Version control
+.git/
+.gitignore
+
+# Logs
+*.log
+npm-debug.log
+
+# Configuration files
+.env*
+.npmrc
+
+# IDE/Editor directories
+.idea/
+
+# Testing & Linting
+coverage/
+.nyc_output/
+.eslintcache
+*.test.js
+*.spec.js
+
+# Temporary files
+tmp/
+temp/
+
+# Docker files
+Dockerfile
+docker-compose.yml
+
+# Readme & Documentation
+README.md
+
+# Other specific files
+*.md
+LICENSE
+.DS_Store
+Thumbs.db
