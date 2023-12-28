@@ -10,7 +10,6 @@ import team from "../assets/CallCenter.jpeg";
 import {motion} from "framer-motion"
 import transition from "../transition";
 
-
 const HomePage = () => {
     return (
         <>

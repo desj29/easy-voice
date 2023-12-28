@@ -5,7 +5,7 @@ import {ShopContext} from "../context/shop-context";
 import "../styling/PlanAndCart.css";
 import {useNavigate} from "react-router-dom";
 import {FaCartShopping} from "react-icons/fa6";
-import {PRODUCTS} from "../PRODUCTS";
+import {PLANS} from "../PLANS";
 
 
 

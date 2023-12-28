@@ -4,7 +4,7 @@ import React, {useState} from "react";
 import {FaCheck} from "react-icons/fa";
 import {FaXmark} from "react-icons/fa6";
 import PlanCard from "../components/PlanCard";
-import {PRODUCTS} from "../PRODUCTS";
+import {PLANS} from "../PLANS";
 import transition from "../transition";
 
 
@@ -40,7 +40,7 @@ const PlanPage = () => {
             </Container>
             <Container>
                 <Row>
-                    {PRODUCTS.map((product) =>
+                    {PLANS.map((product) =>
                         <Col xl={3} md={6} className="mb-3">
                             <PlanCard data={product} yearly={yearly}/>
                         </Col>
