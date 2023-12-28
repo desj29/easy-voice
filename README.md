@@ -11,7 +11,7 @@ Welcome to the repository of Easy Voice, a React.js-based web platform. Easy Voi
 - **Responsive Design**: Fully responsive on various devices and screen sizes.
 - **User Account Management**: Secure login and account management features.
 
-# Building and Running Your React App with Docker
+## Building and Running Easy Voice Web App
 
 This guide will walk you through the process of building a Docker image for your React application and running it locally for testing.
 
