@@ -1,12 +1,12 @@
 import {createContext, useState} from "react";
-import {PRODUCTS} from "../PRODUCTS";
+import {PLANS} from "../PLANS";
 import {ADDONS} from "../ADDONS";
 
 export const ShopContext = createContext(null);
 
 const getDefualtPlanCart = () => {
     let cart = {}
-    for (let i = 1; i<PRODUCTS.length +1; i++){
+    for (let i = 1; i<PLANS.length +1; i++){
         cart[i] = 0;
     }
     return cart;
@@ -20,7 +20,7 @@ const getDefualtAddonCart = () => {
 }
 const getDefualtPhone = () => {
     let phone = {}
-    for (let i = 1; i<PRODUCTS.length +1; i++){
+    for (let i = 1; i<PLANS.length +1; i++){
         phone[i] = 1;
     }
     return phone;
@@ -43,7 +43,7 @@ export const ShopContextProvider = (props) => {
         let totalAmount = 0;
         for (const item in cartPlanItems){
             if(cartPlanItems[item] > 0){
-                let itemInfo = PRODUCTS.find((product) => product.id === Number(item));
+                let itemInfo = PLANS.find((product) => product.id === Number(item));
                 let yearlyMultiplier = yearlyStates[item] ? 10 : 1; // Assuming yearly pricing is 10 times monthly
                 totalAmount += cartPlanItems[item] * itemInfo.price * numPhones[item] * yearlyMultiplier;
             }

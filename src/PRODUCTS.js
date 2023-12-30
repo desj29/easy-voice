@@ -1,75 +1,99 @@
+import T31G from "../assets/phones/T31G.webp";
+import T33G from "../assets/phones/T33G.webp";
+import T53W from "../assets/phones/T53W.webp";
+import T54W from "../assets/phones/T54W.webp";
+import T57W from "../assets/phones/T57W.webp";
+import T58W from "../assets/phones/T58W.webp";
+
+
+
+
 export const PRODUCTS = [
     {
-        id: 1,
-        badge: "silverBadge",
-        productName: "Silver Package",
-        price: 24.95,
-        features: [
-            "Unlimited Extensions",
-            "Fully Featured",
-            "Unlimited Simultaneous Calls",
-            "Addons On Demand",
-            "Free Modules Available",
-            "Always have latest version",
-            "2 VitXi WebRTC Softphone",
-            "Auto Provisioning",
-            "Ticket Support"
+        PHONES: [
+            {
+                id: 1,
+                productName: "Yealink T31G",
+                price: 70,
+                image: T31G
+            },
+            {
+                id: 2,
+                productName: "Yealink T33G",
+                price: 90,
+                image: T33G
+            },
+            {
+                id: 3,
+                productName: "Yealink T53W",
+                price: 155,
+                image: T53W
+            },
+            {
+                id: 4,
+                productName: "Yealink T54W",
+                price: 190,
+                image: T54W
+            },
+            {
+                id: 5,
+                productName: "Yealink T57W",
+                price: 250,
+                image: T57W
+            },
+            {
+                id: 6,
+                productName: "Yealink T58W",
+                price: 375,
+                image: T58W
+            },
+
         ]
     },
     {
-        id: 2,
-        badge: "goldBadge",
-        productName: "Gold Package",
-        price: 29.95,
-        features: [
-            "Unlimited Extensions",
-            "Fully Featured",
-            "Unlimited Simultaneous Calls",
-            "Addons On Demand",
-            "Free Modules Available",
-            "Always have latest version",
-            "Unlimited VitXi WebRTC Softphones",
-            "Auto Provisioning",
-            "Ticket Support",
-        ]
-    },
-    {
-        id: 3,
-        badge: "diamondBadge",
-        productName: "Diamond Package",
-        price: 34.95,
-        features: [
-            "Unlimited Extensions",
-            "Fully Featured",
-            "Unlimited Simultaneous Calls",
-            "Addons On Demand",
-            "Free Modules Available",
-            "Always have latest version",
-            "Unlimited VitXi WebRTC Softphones",
-            "Unlimited Vital PBX Connect (IPhone and Android Client)",
-            "CRM Integration",
-            "Auto Provisioning",
-            "Ticket Support",
-        ]
-    },
-    {
-        id: 4,
-        badge: "blackBadge",
-        productName: "Enterprise Package",
-        price: 40.95,
-        features: [
-            "Unlimited Extensions",
-            "Fully Featured",
-            "Unlimited Simultaneous Calls",
-            "Addons On Demand",
-            "Free Modules Available",
-            "Always have latest version",
-            "Unlimited WebRTC Clients",
-            "Unlimited Vital PBX Connect (IPhone and Android Client)",
-            "Microsoft Teams Integration",
-            "CRM Integration",
-            "Auto Provisioning",
-            "Ticket Support",
+        CORDLESS: [
+            {
+                id: 1,
+                productName: "Yealink W73 Pair",
+                price: 150,
+            },
+            {
+                id: 2,
+                productName: "Yealink W78 Pair",
+                price: 185,
+            },
+            {
+                id: 3,
+                productName: "Yealink W79 Pair (Rugged)",
+                price: 265,
+            },
+            {
+                id: 4,
+                productName: "Yealink W73H (Handset Only)",
+                price: 85,
+            },
+            {
+                id: 5,
+                productName: "Yealink W78H (Handset Only)",
+                price: 120,
+            },
+
+            {
+                id: 6,
+                productName: "Yealink W59 (Handset Only)",
+                price: 195,
+            },
+            {
+                id: 7,
+                productName: "Yealink W80 Base",
+                price: 275,
+            },
+            {
+                id: 8,
+                productName: "Yealink W80 Device Manager",
+                price: 275,
+            },
+
         ]
     },
 ]

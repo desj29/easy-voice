@@ -14,7 +14,7 @@ import {
 } from "react-bootstrap";
 import React, {useContext, useEffect, useRef, useState} from "react";
 import emailjs from '@emailjs/browser';
-import {PRODUCTS} from "../../PRODUCTS";
+import {PLANS} from "../../PLANS";
 import CartPlanItem from "./CartPlanItem";
 import {ShopContext} from "../../context/shop-context";
 import { IoIosWarning } from "react-icons/io";
@@ -47,7 +47,7 @@ export default function CartModal({showModal, closeModal}) {
         let cartPlanItemsString = "";
         let cartAddonItemsString = "";
 
-        PRODUCTS.forEach(product => {
+        PLANS.forEach(product => {
             if (cartPlanItems[product.id] !== 0) {
                 cartPlanItemsString += `Plan: ${product.productName}\t    Number of Phones: ${numPhones[product.id]}\t    Quantity: ${cartPlanItems[product.id]}\t    Yearly: ${yearlyStates[product.id]}\n`;
             }

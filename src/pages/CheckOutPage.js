@@ -1,5 +1,5 @@
 import {Button, Col, Container, Row, Table} from "react-bootstrap";
-import {PRODUCTS} from "../PRODUCTS";
+import {PLANS} from "../PLANS";
 import React, {useContext, useState} from "react";
 import {ShopContext} from "../context/shop-context";
 import CartPlanItem from "../components/cart/CartPlanItem";
@@ -40,7 +40,7 @@ const CheckOutPage = () => {
                     </thead>
                     <tbody>
 
-                        {PRODUCTS.map((product) => {
+                        {PLANS.map((product) => {
                             if (cartPlanItems[product.id] !== 0){
                                 return (
                                     <tr>
