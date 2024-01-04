@@ -1,0 +1,68 @@
+.productPageHeader {
+    position: relative;
+    background: url("../assets/headers/AdobeStock_283777534.jpeg") no-repeat center;
+    background-size: cover;
+    height: 594px;
+}
+
+.productPageHeader::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Black with 25% opacity */
+    z-index: 1;
+}
+
+.productPageHeader h1 {
+    position: relative;
+    z-index: 2;
+    color: white; /* or any color you prefer */
+}
+.product-card {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: contain;
+}
+
+.cartButton {
+    transition: opacity 0.3s ease;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(34, 87, 119, 0.8);
+    border: none;
+    opacity: 0; /* Hidden by default on larger screens */
+}
+
+@media (hover: hover) {
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .product-card:hover .cartButton {
+        opacity: 1; /* Show button on hover for non-touch devices */
+    }
+}
+
+@media (max-width: 767px) {
+    .cartButton {
+        opacity: 1; /* Always show button on smaller (touch) screens */
+    }
+
+    .min-card-height {
+        min-height: 300px;
+    }
+}
+.productsTab {
+    color: white !important;
+}

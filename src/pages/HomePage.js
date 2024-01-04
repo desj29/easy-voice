@@ -1,6 +1,5 @@
 import {Button, Card, CardGroup, Carousel, Col, Container, Image, Row} from "react-bootstrap";
 import "../styling/HomePage.css";
-import devices from "../assets/EasyvoiceDevices.jpg";
 import voipImg from "../assets/carousel/Voip.jpeg";
 import networkImg from "../assets/carousel/Network.jpeg";
 import cloudImg from "../assets/carousel/Cloud.jpeg";
@@ -48,7 +47,10 @@ const HomePage = () => {
                             </motion.h1>
                             <hr className="styledGradient"/>
                             <p className="lead">
-                                For over 15 years, Easy Voice LLC has been a dedicated supporter of the business sector, providing a range of comprehensive solutions for enterprises. Our offerings include versatile Cloud Services, advanced Cloud-Based PBX Systems, and customized development solutions tailored to meet diverse business needs.
+                                For over 15 years, Easy Voice LLC has been a dedicated supporter of the business sector,
+                                providing a range of comprehensive solutions for enterprises. Our offerings include
+                                versatile Cloud Services, advanced Cloud-Based PBX Systems, and customized development
+                                solutions tailored to meet diverse business needs.
                                 {/*Harness the power of advanced VOIP, expansive NETWORK capabilities, and scalable CLOUD*/}
                                 {/*solutions. Discover our range of voice plans, add-ons, and long-term contracts designed*/}
                                 {/*for seamless communication. Easy Voice bridges the communication gap for businesses and*/}
@@ -64,7 +66,9 @@ const HomePage = () => {
                             <Card.Body>
                                 <Card.Title>Plans</Card.Title>
                                 <Card.Text>
-                                    Choose from a variety of plans tailored for different business sizes. Our plans offer essential communication tools like HD voice calls and video conferencing, backed by reliable support. Ideal for seamless day-to-day business communications.
+                                    Choose from a variety of plans tailored for different business sizes. Our plans
+                                    offer essential communication tools like HD voice calls and video conferencing,
+                                    backed by reliable support. Ideal for seamless day-to-day business communications.
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
@@ -78,7 +82,9 @@ const HomePage = () => {
                             <Card.Body>
                                 <Card.Title>Add-Ons</Card.Title>
                                 <Card.Text>
-                                    Customize your plan with add-ons. These features enhance your communication capabilities and are perfect for businesses looking to optimize their communication systems.
+                                    Customize your plan with add-ons. These features enhance your communication
+                                    capabilities and are perfect for businesses looking to optimize their communication
+                                    systems.
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
@@ -92,7 +98,10 @@ const HomePage = () => {
                             <Card.Body>
                                 <Card.Title>Contracts</Card.Title>
                                 <Card.Text>
-                                    Discover the benefits of our long-term contracts, specially designed for businesses seeking stability and value. Opt for our 3 to 5-year plans and enjoy substantial discounts, ensuring cost-effective communication solutions over the long term. Please contact a team member if interested.
+                                    Discover the benefits of our long-term contracts, specially designed for businesses
+                                    seeking stability and value. Opt for our 3 to 5-year plans and enjoy substantial
+                                    discounts, ensuring cost-effective communication solutions over the long term.
+                                    Please contact a team member if interested.
                                 </Card.Text>
                             </Card.Body>
 
@@ -106,39 +115,39 @@ const HomePage = () => {
                 </Row>
             </Container>
             {/*<Container className="roundTop">*/}
-                {/*<Row className="py-4 align-items-center">*/}
-                {/*    <Col lg={6} className="order-lg-2">*/}
-                {/*        <Image className="mx-auto" src={devices} alt="Seamless integration" fluid/>*/}
-                {/*    </Col>*/}
-                {/*    <Col lg={6} className="order-lg-1">*/}
-                {/*        <div className="text-center">*/}
+            {/*<Row className="py-4 align-items-center">*/}
+            {/*    <Col lg={6} className="order-lg-2">*/}
+            {/*        <Image className="mx-auto" src={devices} alt="Seamless integration" fluid/>*/}
+            {/*    </Col>*/}
+            {/*    <Col lg={6} className="order-lg-1">*/}
+            {/*        <div className="text-center">*/}
 
-                {/*            <h2 className="mb-3">Find Your Perfect Business Communication Solution</h2>*/}
-                {/*            <p className="mb-4">*/}
-                {/*                Unlock the full potential of your business with Easy Voice's comprehensive suite of*/}
-                {/*                digital communication tools. Our solutions are crafted to enhance reliability,*/}
-                {/*                streamline operations, and pave the way for scalable growth. Step into the future of*/}
-                {/*                seamless connectivity with a plan tailored to your unique needs.*/}
-                {/*            </p>*/}
-                {/*            <Button variant="outline-light" className="genericButton" href="/pricing">View*/}
-                {/*                Plans</Button>*/}
-                {/*        </div>*/}
-                {/*    </Col>*/}
-                {/*</Row>*/}
-                {/*<Row className="darkRow py-4">*/}
-                {/*    <Col lg={6} className="my-auto">*/}
-                {/*        <img className="img-fluid mx-auto" src={phone} alt="Advanced communication technology"/>*/}
-                {/*    </Col>*/}
-                {/*    <Col lg={6} className="my-auto textDarkRow">*/}
-                {/*        <div className="text-center">*/}
-                {/*            <h2 className="mb-3">Seamless Integration</h2>*/}
-                {/*            <p className="mb-4">*/}
-                {/*                Integrate our VOIP technology into your existing systems with ease. Our solutions are designed to be compatible with a wide range of hardware and software, ensuring a smooth transition and continued productivity.*/}
-                {/*            </p>*/}
-                {/*            <Button variant="secondary" className="genericButton" href="#">Learn How</Button>*/}
-                {/*        </div>*/}
-                {/*    </Col>*/}
-                {/*</Row>*/}
+            {/*            <h2 className="mb-3">Find Your Perfect Business Communication Solution</h2>*/}
+            {/*            <p className="mb-4">*/}
+            {/*                Unlock the full potential of your business with Easy Voice's comprehensive suite of*/}
+            {/*                digital communication tools. Our solutions are crafted to enhance reliability,*/}
+            {/*                streamline operations, and pave the way for scalable growth. Step into the future of*/}
+            {/*                seamless connectivity with a plan tailored to your unique needs.*/}
+            {/*            </p>*/}
+            {/*            <Button variant="outline-light" className="genericButton" href="/pricing">View*/}
+            {/*                Plans</Button>*/}
+            {/*        </div>*/}
+            {/*    </Col>*/}
+            {/*</Row>*/}
+            {/*<Row className="darkRow py-4">*/}
+            {/*    <Col lg={6} className="my-auto">*/}
+            {/*        <img className="img-fluid mx-auto" src={phone} alt="Advanced communication technology"/>*/}
+            {/*    </Col>*/}
+            {/*    <Col lg={6} className="my-auto textDarkRow">*/}
+            {/*        <div className="text-center">*/}
+            {/*            <h2 className="mb-3">Seamless Integration</h2>*/}
+            {/*            <p className="mb-4">*/}
+            {/*                Integrate our VOIP technology into your existing systems with ease. Our solutions are designed to be compatible with a wide range of hardware and software, ensuring a smooth transition and continued productivity.*/}
+            {/*            </p>*/}
+            {/*            <Button variant="secondary" className="genericButton" href="#">Learn How</Button>*/}
+            {/*        </div>*/}
+            {/*    </Col>*/}
+            {/*</Row>*/}
 
 
             {/*</Container>*/}

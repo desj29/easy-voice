@@ -1,15 +1,24 @@
 import React, {useContext, useEffect, useState} from "react";
 import {ShopContext} from "../../context/shop-context";
 import "../../styling/PlanAndCart.css";
-import {Button, Form} from "react-bootstrap";
+import {Form} from "react-bootstrap";
 import {FaTrashCan} from "react-icons/fa6";
 
 
-
-export default function CartPlanItem({data}){
+export default function CartPlanItem({data}) {
     const [yearly, setYearly] = useState(false);
     const {id, badge, productName, price} = data;
-    const {cartPlanItems,  addToPlanCart, removeFromPlanCart, updateCartItemCount, removePhone, addPhone, numPhones, updatePhoneCount, updateYearlyState} = useContext(ShopContext);
+    const {
+        cartPlanItems,
+        addToPlanCart,
+        removeFromPlanCart,
+        updateCartItemCount,
+        removePhone,
+        addPhone,
+        numPhones,
+        updatePhoneCount,
+        updateYearlyState
+    } = useContext(ShopContext);
 
     useEffect(() => {
         updateYearlyState(data.id, yearly);
@@ -24,7 +33,7 @@ export default function CartPlanItem({data}){
         }
     }
 
-    return(
+    return (
         <>
             <td>{productName}</td>
             <td>${price} /phone</td>
@@ -32,7 +41,8 @@ export default function CartPlanItem({data}){
                 {/*<button onClick={() => removeFromCart(id)}> - </button>*/}
                 {/*<input value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)}/>*/}
                 {/*<button onClick={() => addToCart(id)}> + </button>*/}
-                <input min="1" className="numberInput" type="number" value={numPhones[id]} onChange={(e) => handleInputChange(e, id)}/>
+                <input min="1" className="numberInput" type="number" value={numPhones[id]}
+                       onChange={(e) => handleInputChange(e, id)}/>
             </td>
             <td>
                 <Form.Select onChange={(e) => setYearly(e.target.value === 'true')}>
@@ -41,7 +51,7 @@ export default function CartPlanItem({data}){
                 </Form.Select>
             </td>
             <td>
-                ${yearly ? (10*cartPlanItems[id]*price*numPhones[id]).toFixed(2) : (cartPlanItems[id]*price*numPhones[id]).toFixed(2)}
+                ${yearly ? (10 * cartPlanItems[id] * price * numPhones[id]).toFixed(2) : (cartPlanItems[id] * price * numPhones[id]).toFixed(2)}
             </td>
             <td>
                 <FaTrashCan onClick={() => removeFromPlanCart(id)} className="text-danger trash"/>

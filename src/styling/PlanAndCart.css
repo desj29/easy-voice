@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .numberInput {
     width: 50px;
     text-align: center;
@@ -10,7 +11,8 @@
     padding: 5px;
     margin: 0 5px;
 }
-.trash:hover{
+
+.trash:hover {
     cursor: pointer;
 }
 
@@ -20,6 +22,7 @@
     background-size: cover;
     height: 594px;
 }
+
 .CheckoutHeader::before {
     content: '';
     position: absolute;
@@ -30,11 +33,13 @@
     background: rgba(0, 0, 0, 0.6); /* Black with 25% opacity */
     z-index: 1;
 }
+
 .CheckoutHeader h1 {
     position: relative;
     z-index: 2;
     color: white; /* or any color you prefer */
 }
+
 .plan-card {
     height: 100%; /* Full height of the parent */
 }

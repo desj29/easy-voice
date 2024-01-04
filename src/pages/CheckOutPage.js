@@ -1,4 +1,4 @@
-import {Button, Col, Container, Row, Table} from "react-bootstrap";
+import {Button, Container, Row, Table} from "react-bootstrap";
 import {PLANS} from "../PLANS";
 import React, {useContext, useState} from "react";
 import {ShopContext} from "../context/shop-context";
@@ -9,16 +9,18 @@ import transition from "../transition";
 import "../styling/PlanAndCart.css";
 import {ADDONS} from "../ADDONS";
 import CartAddonItem from "../components/cart/CartAddonItem";
+import {PRODUCTS} from "../PRODUCTS";
+import CartProductItem from "../components/cart/CartProductItem";
 
 
 const CheckOutPage = () => {
-    const {cartPlanItems, getTotalCartAmount, cartAddonItems} = useContext(ShopContext);
+    const {cartPlanItems, getTotalCartAmount, cartAddonItems, cartProductItems} = useContext(ShopContext);
     const totalAmount = getTotalCartAmount();
     const [show, setShow] = useState(false);
 
 
     const navigate = useNavigate();
-    return(
+    return (
         <>
             <Row className="align-items-center CheckoutHeader">
                 <div className="black-overlay"></div>
@@ -40,24 +42,33 @@ const CheckOutPage = () => {
                     </thead>
                     <tbody>
 
-                        {PLANS.map((product) => {
-                            if (cartPlanItems[product.id] !== 0){
-                                return (
-                                    <tr>
-                                        <CartPlanItem data={product}/>
-                                    </tr>
-                                );
-                            }
-                        })}
-                        {ADDONS.map((addons) => {
-                            if (cartAddonItems[addons.id] !== 0){
-                                return (
-                                    <tr>
-                                        <CartAddonItem data={addons}/>
-                                    </tr>
-                                );
-                            }
-                        })}
+                    {PLANS.map((product) => {
+                        if (cartPlanItems[product.id] !== 0) {
+                            return (
+                                <tr>
+                                    <CartPlanItem data={product}/>
+                                </tr>
+                            );
+                        }
+                    })}
+                    {ADDONS.map((addons) => {
+                        if (cartAddonItems[addons.id] !== 0) {
+                            return (
+                                <tr>
+                                    <CartAddonItem data={addons}/>
+                                </tr>
+                            );
+                        }
+                    })}
+                    {PRODUCTS.map((products) => {
+                        if (cartProductItems[products.id] !== 0) {
+                            return (
+                                <tr>
+                                    <CartProductItem data={products}/>
+                                </tr>
+                            );
+                        }
+                    })}
                     </tbody>
 
                 </Table>
@@ -66,19 +77,20 @@ const CheckOutPage = () => {
                     <div>
                         <Container>
                             <p> Subtotal: ${totalAmount}</p>
-                            <Button className="genericButton bg-secondary border-light" onClick={() => navigate("/plans")}>Continue Shopping</Button>
+                            <Button className="genericButton bg-secondary border-light"
+                                    onClick={() => navigate("/plans")}>Continue Shopping</Button>
                             <Button onClick={() => setShow(true)} className="genericButton">Checkout</Button>
                         </Container>
 
                     </div>
-                    ) : (
-                        <div className="text-center">
-                            <h2 className="text-danger">Your Cart is Empty</h2>
-                            <Button className="genericButton" onClick={() => navigate("/plans")}>Continue Shopping</Button>
-                        </div>
+                ) : (
+                    <div className="text-center">
+                        <h2 className="text-danger">Your Cart is Empty</h2>
+                        <Button className="genericButton" onClick={() => navigate("/plans")}>Continue Shopping</Button>
+                    </div>
 
-                    )}
-                <CartModal showModal={show} closeModal={() => setShow(false)} />
+                )}
+                <CartModal showModal={show} closeModal={() => setShow(false)}/>
             </Container>
         </>
     );

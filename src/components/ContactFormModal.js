@@ -1,4 +1,4 @@
-import {Button, Col, Container, FloatingLabel, Form, Modal, Row, Toast, ToastContainer} from "react-bootstrap";
+import {Button, FloatingLabel, Form, Modal, Toast, ToastContainer} from "react-bootstrap";
 import React, {useRef, useState} from "react";
 import emailjs from '@emailjs/browser';
 

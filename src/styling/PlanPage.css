@@ -10,13 +10,13 @@
     cursor: pointer;
 }
 
-.activeTime{
+.activeTime {
     background-color: #225777 !important;
     border: 1.5px solid #225777 !important;
     color: white;
 }
 
-.silverBadge{
+.silverBadge {
     background: linear-gradient(
             45deg,
             #999 5%,
@@ -30,26 +30,28 @@
     color: black;
 }
 
-.goldBadge{
-    background: linear-gradient(45deg,#d4af37 5%,#debc5b 10%,#e7c97c 30%,#efd69d 50%,#e7c97c 70%,#debc5b 80%,#d4af37 95%) !important;
+.goldBadge {
+    background: linear-gradient(45deg, #d4af37 5%, #debc5b 10%, #e7c97c 30%, #efd69d 50%, #e7c97c 70%, #debc5b 80%, #d4af37 95%) !important;
     color: black;
 }
 
-.diamondBadge{
-    background: linear-gradient(45deg,#1e90ff 5%,#00bfff 10%,#87cefa 30%,#87ceeb 50%,#87cefa 70%,#00bfff 80%,#1e90ff 95%) !important;
+.diamondBadge {
+    background: linear-gradient(45deg, #1e90ff 5%, #00bfff 10%, #87cefa 30%, #87ceeb 50%, #87cefa 70%, #00bfff 80%, #1e90ff 95%) !important;
     color: black;
 }
 
-.blackBadge{
+.blackBadge {
     background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%) !important;
     color: white;
 }
+
 .planPageHeader {
     position: relative;
     background: url("../assets/headers/PlansHeader.jpeg") no-repeat center;
     background-size: cover;
     height: 594px;
 }
+
 .planPageHeader::before {
     content: '';
     position: absolute;
@@ -60,6 +62,7 @@
     background: rgba(0, 0, 0, 0.6); /* Black with 25% opacity */
     z-index: 1;
 }
+
 .planPageHeader h1 {
     position: relative;
     z-index: 2;

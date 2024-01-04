@@ -4,6 +4,7 @@
     background-size: cover;
     height: 594px;
 }
+
 .addonsPageHeader::before {
     content: '';
     position: absolute;
@@ -14,6 +15,7 @@
     background: rgba(0, 0, 0, 0.6); /* Black with 25% opacity */
     z-index: 1;
 }
+
 .addonsPageHeader h1 {
     position: relative;
     z-index: 2;

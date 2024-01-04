@@ -1,5 +1,3 @@
-import {useState} from "react";
-
 export default function CustomNavbarToggle({expanded, onClick}) {
     return (
         <button
