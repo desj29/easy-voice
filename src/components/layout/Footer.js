@@ -1,7 +1,7 @@
 import {Col, Container, Row} from "react-bootstrap";
 import "../../styling/Footer.css";
 import {LinkContainer} from "react-router-bootstrap";
-import logo from "../../assets/logo/FullLogoWhite.png";
+import logo from "../../assets/logo/FullLogoWhite.webp";
 
 export default function Footer() {
     return (

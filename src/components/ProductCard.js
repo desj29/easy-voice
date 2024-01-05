@@ -3,7 +3,7 @@ import React, {useContext} from "react";
 import {ShopContext} from "../context/shop-context";
 import "../styling/ProductPage.css";
 import {useNavigate} from "react-router-dom";
-import {FaCartShopping} from "react-icons/fa6";
+import {BsCartCheckFill, BsCartPlusFill} from "react-icons/bs";
 
 export default function ProductCard({data}) {
     const {id, productName, price, image} = data;
@@ -20,11 +20,11 @@ export default function ProductCard({data}) {
                 </Card.Title>
                 {cartProductItems[id] === 0 ? (
                     <Button variant="outline-secondary" className="cartButton text-white" onClick={() => addToProductCart(id)}>
-                        <FaCartShopping/>
+                        <BsCartPlusFill/>
                     </Button>
                 ) : (
                     <Button variant="outline-secondary" className="cartButton text-white" onClick={() => navigate('/cart')}>
-                        <FaCartShopping/>
+                        <BsCartCheckFill/>
                     </Button>
                 )}
             </Card.Body>

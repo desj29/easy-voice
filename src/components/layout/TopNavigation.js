@@ -1,6 +1,6 @@
 import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
-import easyVoiceLogo from "../../assets/logo/FullLogoWhite.png";
-import easyVoiceLogoSmall from "../../assets/logo/LogoTitleWhite.png";
+import easyVoiceLogo from "../../assets/logo/FullLogoWhite.webp";
+import easyVoiceLogoSmall from "../../assets/logo/LogoTitleWhite.webp";
 
 import {LinkContainer} from 'react-router-bootstrap';
 import "../../styling/TopNavigation.css";

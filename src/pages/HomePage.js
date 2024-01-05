@@ -1,11 +1,11 @@
 import {Button, Card, CardGroup, Carousel, Col, Container, Image, Row} from "react-bootstrap";
 import "../styling/HomePage.css";
-import voipImg from "../assets/carousel/Voip.jpeg";
-import networkImg from "../assets/carousel/Network.jpeg";
-import cloudImg from "../assets/carousel/Cloud.jpeg";
-import phone from "../assets/WomanOnPhone.jpeg";
-import guy from "../assets/ManOnPhoneAndLaptop.jpeg";
-import team from "../assets/CallCenter.jpeg";
+import voipImg from "../assets/carousel/Voip.webp";
+import networkImg from "../assets/carousel/Network.webp";
+import cloudImg from "../assets/carousel/Cloud.webp";
+import phone from "../assets/WomanOnPhone.webp";
+import guy from "../assets/ManOnPhoneAndLaptop.webp";
+import team from "../assets/CallCenter.webp";
 import {motion} from "framer-motion"
 import transition from "../transition";
 

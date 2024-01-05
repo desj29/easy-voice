@@ -47,7 +47,7 @@
 
 .planPageHeader {
     position: relative;
-    background: url("../assets/headers/PlansHeader.jpeg") no-repeat center;
+    background: url("../assets/headers/PlansHeader.webp") no-repeat center;
     background-size: cover;
     height: 594px;
 }
