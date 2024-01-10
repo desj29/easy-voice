@@ -4,7 +4,7 @@ import PlanPage from "../../pages/PlanPage";
 import ContactPage from "../../pages/ContactPage";
 import Cart from "../../pages/CheckOutPage";
 import ErrorPage from "../../pages/ErrorPage";
-import React from "react";
+import React, {lazy} from "react";
 import {AnimatePresence} from "framer-motion";
 import AddOnsPage from "../../pages/AddOnsPage";
 import ProductPage from "../../pages/ProductPage";
