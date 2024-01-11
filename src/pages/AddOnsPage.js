@@ -1,10 +1,9 @@
-import {Col, Container, Row, Table} from "react-bootstrap";
+import {Col, Container, Row} from "react-bootstrap";
 import "../styling/AddOnsPage.css";
-import React, {useState} from "react";
+import React from "react";
 import transition from "../transition";
 import {ADDONS} from "../ADDONS";
 import AddOnCard from "../components/AddOnCard";
-
 
 
 const AddOnsPage = () => {
@@ -28,7 +27,6 @@ const AddOnsPage = () => {
                         <Col className="d-flex" lg={4} md={6}>
                             <AddOnCard data={addons}/>
                         </Col>
-
                     )}
                 </Row>
             </Container>

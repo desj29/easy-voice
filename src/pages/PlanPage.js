@@ -8,7 +8,6 @@ import {PLANS} from "../PLANS";
 import transition from "../transition";
 
 
-
 const PlanPage = () => {
     const [yearly, setYearly] = useState(false); // Toggle state for displaying yearly or monthly plans.
 
@@ -47,7 +46,6 @@ const PlanPage = () => {
                     )}
                 </Row>
             </Container>
-
 
 
             <Container>

@@ -1,12 +1,15 @@
-.footer{
+.footer {
     background-color: #333333;
 }
-.vl{
+
+.vl {
     border-left: 2px solid white;
 }
-.linkText:hover{
+
+.linkText:hover {
     cursor: pointer;
 }
-.copyRight{
+
+.copyRight {
     font-size: small;
 }

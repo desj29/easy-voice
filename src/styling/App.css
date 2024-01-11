@@ -7,6 +7,7 @@
 .contentWrap {
     flex: 1;
 }
+
 .chatButton {
     position: fixed;
     bottom: 20px;
@@ -28,7 +29,8 @@
 .chatButton:hover {
     background-color: #0056b3;
 }
-.slideIn{
+
+.slideIn {
     position: fixed;
     top: 0;
     left: 0;
@@ -38,7 +40,8 @@
     transform-origin: bottom;
     z-index: 2000;
 }
-.slideOut{
+
+.slideOut {
     position: fixed;
     top: 0;
     left: 0;

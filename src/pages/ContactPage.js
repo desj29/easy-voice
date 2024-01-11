@@ -1,14 +1,10 @@
-import { Button, Card, Col, Container, Row, Image } from "react-bootstrap";
-import guyOnPhone from "../assets/GirlOnPhoneAndLaptop.jpeg";
+import {Col, Container, Image, Row} from "react-bootstrap";
 import "../styling/ContactPage.css";
-import { FaPhoneAlt } from "react-icons/fa";
-import { MdEmail, MdLocationOn } from "react-icons/md";
-import ContactFormModal from "../components/ContactFormModal";
-import React, { useState } from "react";
-import contactArt from "../assets/ContactArt.png";
-import { motion } from "framer-motion"
+import {FaPhoneAlt} from "react-icons/fa";
+import {MdEmail} from "react-icons/md";
+import React, {useState} from "react";
+import contactArt from "../assets/ContactArt.webp";
 import transition from "../transition";
-import { FcSupport } from "react-icons/fc";
 
 
 const ContactPage = () => {

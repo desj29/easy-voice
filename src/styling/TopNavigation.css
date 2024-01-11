@@ -1,10 +1,9 @@
 
-
 .dropdown1.active {
     font-weight: bold;
 }
 
-.dropdown1:hover{
+.dropdown1:hover {
     background-color: grey !important;
 }
 
@@ -12,7 +11,7 @@
     .dropdown1,
     .dropdown1:active,
     .dropdown1:focus,
-    .dropdown1:hover{
+    .dropdown1:hover {
         background-color: transparent !important;
     }
 }
@@ -28,17 +27,20 @@
         z-index: 1050;
     }
 }
+
 @media only screen and (max-width: 768px) {
     .navbar {
         background-color: #2e242c !important;
     }
 }
+
 /* You can still use media queries to fine-tune the logo size if needed */
 @media (min-width: 768px) {
     .logo-image {
         width: 50%; /* Example for larger screens */
     }
 }
+
 @media (max-width: 768px) {
     .navbar-brand-container {
         display: flex;

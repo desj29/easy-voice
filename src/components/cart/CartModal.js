@@ -1,36 +1,24 @@
-import {
-    Button,
-    Col,
-    Container,
-    FloatingLabel,
-    Form,
-    Modal,
-    OverlayTrigger,
-    Popover,
-    Row,
-    Table,
-    Toast,
-    ToastContainer
-} from "react-bootstrap";
-import React, {useContext, useEffect, useRef, useState} from "react";
+import {Button, FloatingLabel, Form, Modal, OverlayTrigger, Popover, Toast, ToastContainer} from "react-bootstrap";
+import React, {useContext, useRef, useState} from "react";
 import emailjs from '@emailjs/browser';
 import {PLANS} from "../../PLANS";
-import CartPlanItem from "./CartPlanItem";
 import {ShopContext} from "../../context/shop-context";
-import { IoIosWarning } from "react-icons/io";
+import {IoIosWarning} from "react-icons/io";
 import {ADDONS} from "../../ADDONS";
+import {PRODUCTS} from "../../PRODUCTS";
 
 export default function CartModal({showModal, closeModal}) {
     const form = useRef();
     const [emailStatus, setEmailStatus] = useState();
     const [showToast, setShowToast] = useState(false);
-    const {cartPlanItems, numPhones, yearlyStates, cartAddonItems} = useContext(ShopContext);
+    const {cartPlanItems, numPhones, yearlyStates, cartAddonItems, cartProductItems} = useContext(ShopContext);
 
     const popover = (
         <Popover id="popover-basic">
             <Popover.Header as="h3">Cart Maintenance</Popover.Header>
             <Popover.Body>
-                Due to maintenance issues our cart checkout is disabled. Please provide contact info and a team member will get back with you shortly.<br/>
+                Due to maintenance issues our cart checkout is disabled. Please provide contact info and a team member
+                will get back with you shortly.<br/>
                 <strong className="text-danger">*Contents of cart will be sent to team member*</strong>
             </Popover.Body>
         </Popover>
@@ -46,6 +34,7 @@ export default function CartModal({showModal, closeModal}) {
     const formatCartItemsForEmail = () => {
         let cartPlanItemsString = "";
         let cartAddonItemsString = "";
+        let cartProductItemsString = "";
 
         PLANS.forEach(product => {
             if (cartPlanItems[product.id] !== 0) {
@@ -58,7 +47,13 @@ export default function CartModal({showModal, closeModal}) {
                 cartAddonItemsString += `Addon: ${addon.productName}\t    Quantity: ${cartAddonItems[addon.id]}\n`;
             }
         });
-        return cartPlanItemsString + cartAddonItemsString;
+
+        PRODUCTS.forEach(product => {
+            if (cartProductItems[product.id] !== 0) {
+                cartProductItemsString += `Product: ${product.productName}\t    Quantity: ${cartProductItems[product.id]}\n`;
+            }
+        });
+        return cartPlanItemsString + "\n" + cartAddonItemsString + "\n" + cartProductItemsString + "\n";
     };
 
     const sendEmail = (e) => {
@@ -88,7 +83,7 @@ export default function CartModal({showModal, closeModal}) {
             <Modal show={showModal} onHide={closeModal}>
                 <Modal.Header className="">
                     <Modal.Title className="title">Cart Checkout</Modal.Title>
-                    <CartInfo />
+                    <CartInfo/>
                 </Modal.Header>
                 <Form ref={form} onSubmit={sendEmail}>
                     <Modal.Body>
@@ -106,11 +101,12 @@ export default function CartModal({showModal, closeModal}) {
 
                         <Form.Group controlId="formBasicPhoneNumber" className="mb-3">
                             <FloatingLabel controlId="phone_number" label="Phone Number">
-                                <Form.Control type="phone" name="phone_number" placeholder="Enter your phone number" required/>
+                                <Form.Control type="phone" name="phone_number" placeholder="Enter your phone number"
+                                              required/>
                             </FloatingLabel>
                         </Form.Group>
 
-                        <Form.Control type="hidden" name="cart_items" value={formatCartItemsForEmail()} />
+                        <Form.Control type="hidden" name="cart_items" value={formatCartItemsForEmail()}/>
 
                     </Modal.Body>
 

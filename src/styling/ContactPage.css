@@ -1,12 +1,14 @@
 /*main color #173054*/
 /*secondary color #225777*/
 /*secondary color #2f617f*/
-.locationImg{
+.locationImg {
     border-radius: 100%;
 }
+
 .contactCard {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 /*.contactIcon {*/
 /*    vertical-align: middle;*/
 /*    margin-right: 10px;*/
@@ -14,20 +16,24 @@
 .contactText {
     color: #173054;
 }
-.contactTextParagraph{
+
+.contactTextParagraph {
     max-width: 360px;
 }
+
 .locationImg {
     max-width: 100%;
     height: auto;
     border-radius: 4px;
 }
+
 .contactPageHeader {
     position: relative;
-    background: url("../assets/headers/ContactUsHeader.jpeg") no-repeat center;
+    background: url("../assets/headers/ContactUsHeader.webp") no-repeat center;
     background-size: cover;
     height: 594px;
 }
+
 .contactPageHeader::before {
     content: '';
     position: absolute;
@@ -38,6 +44,7 @@
     background: rgba(0, 0, 0, 0.6); /* Black with 25% opacity */
     z-index: 1;
 }
+
 .contactPageHeader h1 {
     position: relative;
     z-index: 2;

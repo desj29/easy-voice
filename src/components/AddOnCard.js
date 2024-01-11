@@ -1,42 +1,34 @@
-import {Badge, Button, Card, Container} from "react-bootstrap";
-import {BsCheck2Square} from "react-icons/bs";
+import {Badge, Button, Card} from "react-bootstrap";
 import React, {useContext} from "react";
 import {ShopContext} from "../context/shop-context";
-import "../styling/PlanAndCart.css";
+import "../styling/ProductPage.css";
 import {useNavigate} from "react-router-dom";
-import {FaCartShopping} from "react-icons/fa6";
-import { motion } from "framer-motion"
+import {BsCartCheckFill, BsCartPlusFill} from "react-icons/bs";
 
-export default function AddOnCard({ data }){
+export default function AddOnCard({data}) {
     const {id, productName, price, image, description, per} = data;
     const navigate = useNavigate();
     const {addToAddonCart, cartAddonItems} = useContext(ShopContext);
 
-    return(
-        <Card className="m-2">
-            <Card.Img variant="top" src={image}/>
-            <Card.Body>
-                <Card.Title className="text-center">
-                    {productName}
-                    <br/>
-                    <Badge pill>${price.toFixed(2)} /{per}</Badge>
+    return (
+        <Card className="product-card">
+            <Card.Img variant="top" src={image} className="card-img-top"/>
+            <Card.Body className="text-center">
+                <Card.Title>
+                    <h3 className="textLightRow">{productName}</h3>
+                    <h5>${price.toFixed(2)} /{per}</h5>
                 </Card.Title>
-                <p>{description}</p>
-            </Card.Body>
-
-            <Card.Footer className="text-center">
+                <p className="text-muted">{description}</p>
                 {cartAddonItems[id] === 0 ? (
-                    <Button className="genericButton ms-auto me-auto mb-3 ps-3 pe-3" onClick={() => addToAddonCart(id)}>
-                        Add To Cart
-                        {/*{cartItems[id]> 0 && <>({cartItems[id]})</>}*/}
+                    <Button variant="outline-secondary" className="cartButton text-white" onClick={() => addToAddonCart(id)}>
+                        <BsCartPlusFill/>
                     </Button>
                 ) : (
-                    <Button className="genericButton ms-auto me-auto mb-3 ps-3 pe-3" onClick={() => navigate('/cart')}>
-                        <FaCartShopping/> View Cart
+                    <Button variant="outline-secondary" className="cartButton text-white" onClick={() => navigate('/cart')}>
+                        <BsCartCheckFill/>
                     </Button>
                 )}
-            </Card.Footer>
-
+            </Card.Body>
         </Card>
     );
 }
