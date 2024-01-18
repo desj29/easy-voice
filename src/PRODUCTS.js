@@ -20,6 +20,25 @@ import BH71WP from "./assets/headsets/YEA-BH71-WORKSTATION-PRO.webp";
 import EXP50 from "./assets/accessories/EXP50.webp";
 import HT812AA from "./assets/accessories/HT812.webp";
 import WM from "./assets/accessories/WallMount.webp";
+import T31GDS from "./assets/dataSheets/Yealink T31G Data Sheet.pdf";
+import T33GDS from "./assets/dataSheets/Yealink T33G Data Sheet.pdf";
+import T53WDS from "./assets/dataSheets/Yealink T53W Data Sheet.pdf";
+import T54WDS from "./assets/dataSheets/Yealink T54W Data Sheet.pdf";
+import T57WDS from "./assets/dataSheets/Yealink T57W Data Sheet.pdf";
+import T58WDS from "./assets/dataSheets/Yealink T58W Data Sheet.pdf";
+import W73HDS from "./assets/dataSheets/Yealink W73H.pdf";
+import W73PDS from "./assets/dataSheets/Yealink W73P.pdf";
+import W78HDS from "./assets/dataSheets/Yealink W78H.pdf";
+import W78PDS from "./assets/dataSheets/Yealink W78P.pdf";
+import W79PDS from "./assets/dataSheets/Yealink W79P.pdf";
+import W80BDS from "./assets/dataSheets/Yealink W80.pdf";
+import W59RDS from "./assets/dataSheets/Yealink W59R.pdf";
+import CP935WDS from "./assets/dataSheets/Yealink CP935W.pdf";
+import BH71DS from "./assets/dataSheets/Yealink BH71.pdf";
+import BH76DS from "./assets/dataSheets/Yealink BH76.pdf";
+import WH62DS from "./assets/dataSheets/Yealink WH62.pdf";
+import BH71WPDS from "./assets/dataSheets/Yealink BH71.pdf";
+import EXP50DS from "./assets/dataSheets/Yealink EXP50.pdf";
 
 export const PRODUCTS = [
     {
@@ -27,77 +46,176 @@ export const PRODUCTS = [
         productName: "Yealink T31G",
         price: 70,
         image: T31G,
-        category: "phones"
+        category: "phones",
+        description: "Powerful but simple phone with a small footprint. Great for lobbies, labs, and classrooms.",
+        details: [
+            "2.3” black and white display",
+            "2 programmable keys",
+            "Dual-port gigabit ethernet",
+            "PoE support",
+            "Wall mountable",
+        ],
+        dataSheet: T31GDS,
     },
     {
         id: 2,
         productName: "Yealink T33G",
         price: 90,
         image: T33G,
-        category: "phones"
+        category: "phones",
+        description: "High quality and cost effective. This color screen phone is perfect for small and large office settings.",
+        details: [
+            "2.4” color display",
+            "12 programmable keys",
+            "Dual-port gigabit ethernet",
+            "PoE support",
+            "Wall mountable",
+        ],
+        dataSheet: T33GDS,
     },
     {
         id: 3,
         productName: "Yealink T53W",
         price: 155,
         image: T53W,
-        category: "phones"
+        category: "phones",
+        description: "This elegant, entry-level executive phone is powerful and maximizes efficiency with included Wi-Fi and Bluetooth.",
+        details: [
+            "3.7” adjustable black and white display",
+            "21 programmable keys",
+            "Dual-port gigabit ethernet",
+            "Built-in Bluetooth and Wi-Fi connectivity",
+            "PoE support",
+        ],
+        dataSheet: T53WDS,
     },
     {
         id: 4,
         productName: "Yealink T54W",
         price: 190,
         image: T54W,
-        category: "phones"
+        category: "phones",
+        description: "Tailored to high performance executives and professionals. This expandable desk phone is the go-to for large volume workflows.",
+        details: [
+            "4.3” adjustable color display",
+            "27 programmable keys",
+            "Dual-port gigabit ethernet",
+            "Built-in Bluetooth and Wi-Fi connectivity",
+            "Compatible with EXP50 sidecar",
+        ],
+        dataSheet: T54WDS,
     },
     {
         id: 5,
         productName: "Yealink T57W",
         price: 250,
         image: T57W,
-        category: "phones"
+        category: "phones",
+        description: "The perfect business phone for busy professionals. Its adjustable 7-inch touch screen ensures comfort, rich visuals, and easy navigation.",
+        details: [
+            "7” adjustable touch screen",
+            "29 programmable keys",
+            "Dual-port gigabit ethernet",
+            "Built-in Bluetooth and Wi-Fi connectivity",
+            "Compatible with EXP50 sidecar",
+        ],
+        dataSheet: T57WDS,
     },
     {
         id: 6,
         productName: "Yealink T58W",
         price: 375,
         image: T58W,
-        category: "phones"
+        category: "phones",
+        description: "A brilliant touchscreen and built-in webcam make this top of the line phone perfect for visionary executives that love the cutting-edge.",
+        details: [
+            "7” adjustable touch screen",
+            "27 programmable keys",
+            "Video conferencing camera",
+            "Built-in Bluetooth and Wi-Fi connectivity",
+            "Compatible with EXP50 sidecar",
+        ],
+        dataSheet: T58WDS,
     },
     {
         id: 7,
         productName: "Yealink W73 Pair",
         price: 150,
         image: W73P,
-        category: "cordless"
+        category: "cordless",
+        description: "Designed for modern business on the move, this sleek device offers extended battery life for lasting mobility.",
+        details: [
+            "Base: supports up to 10 cordless handsets",
+            "Handset: Up to 35-hour talk time (in ideal conditions)",
+            "Handset: Up to 400-hour standby time (in ideal conditions)",
+            "Handset: 1.8” color screen",
+            "Handset range: Minimum 160ft indoor, maximum 1,000ft line of sight",
+        ],
+        dataSheet: W73PDS,
     },
     {
         id: 8,
         productName: "Yealink W78 Pair",
         price: 185,
         image: W78P,
-        category: "cordless"
+        category: "cordless",
+        description: "With a stylish design and a generous screen, this durable device is your reliable companion for the mobile professional.",
+        details: [
+            "Base: supports up to 10 cordless handsets",
+            "Handset: Up to 21-hour talk time (in ideal conditions)",
+            "Handset: Up to 166-hour standby time (in ideal conditions)",
+            "Handset: 2.4” color screen",
+            "Handset range: Minimum 160ft indoor, maximum 1,000ft line of sight",
+        ],
+        dataSheet: W78PDS,
     },
     {
         id: 9,
         productName: "Yealink W79 Pair (Rugged)",
         price: 265,
         image: W79P,
-        category: "cordless"
+        category: "cordless",
+        description: "This rugged device resists dust, water, and drops, ensuring lasting durability in any environment.",
+        details: [
+            "Base: supports up to 10 cordless handsets",
+            "Handset: Up to 28-hour talk time (in ideal conditions)",
+            "Handset: Alarm functions for occupational safety",
+            "Handset: 1.8\" Color Screen",
+            "Handset range: Minimum 160ft indoor, maximum 1,000ft line of sight",
+        ],
+        dataSheet: W79PDS,
     },
     {
         id: 10,
         productName: "Yealink W73H (Handset Only)",
         price: 85,
         image: W73H,
-        category: "cordless"
+        category: "cordless",
+        description: "Designed for modern business on the move, this sleek device offers extended battery life for lasting mobility.",
+        details: [
+            "Range: Minimum 160ft indoor, maximum 1,000ft line of sight",
+            "Up to 35-hour talk time (in ideal conditions)",
+            "Up to 400-hour standby time (in ideal conditions)",
+            "1.8\" color screen",
+            "Quick charge - 10-min charge time for 2-hour talk time",
+        ],
+        dataSheet: W73HDS,
     },
     {
         id: 11,
         productName: "Yealink W78H (Handset Only)",
         price: 120,
         image: W78H,
-        category: "cordless"
+        category: "cordless",
+        description: "With a stylish design and a generous screen, this durable device is your reliable companion for the mobile professional.",
+        details: [
+            "Range: Minimum 160ft indoor, maximum 1,000ft line of sight",
+            "Up to 21-hour talk time (in ideal conditions)",
+            "Up to 166-hour standby time (in ideal conditions)",
+            "2.4\" color screen",
+            "Quick charge - 10-min charge time for 2-hour talk time",
+        ],
+        dataSheet: W78HDS,
     },
 
     {
@@ -105,63 +223,140 @@ export const PRODUCTS = [
         productName: "Yealink W59 (Handset Only)",
         price: 195,
         image: W59R,
-        category: "cordless"
+        category: "cordless",
+        description: "This rugged device resists dust, water, and drops, ensuring lasting durability in any environment.",
+        details: [
+            "Alarm functions for occupational safety: push-button alarm, no-movement alarm, mandown alarm and running alarm",
+            "Scratch resistant, disinfectant resistant",
+            "Up to 28-hour talk time (in ideal conditions)",
+            "Up to 360-hour standby time (in ideal conditions)",
+            "1.8\" color screen and built-in Bluetooth",
+        ],
+        dataSheet: W59RDS,
     },
     {
         id: 13,
         productName: "Yealink W80 Base",
         price: 275,
         image: W80B,
-        category: "cordless"
+        category: "cordless",
+        description: "Unleash seamless connectivity with a wireless mesh system, keeping even the largest offices mobile.",
+        details: [
+            "Supports up to 100 handsets",
+            "Compatible with most handsets (W56H/W73H/W78H/W59R)",
+            "Requires a W80DM",
+        ],
+        dataSheet: W80BDS,
     },
     {
         id: 14,
         productName: "Yealink W80 Device Manager",
         price: 275,
         image: W80B,
-        category: "cordless"
+        category: "cordless",
+        description: "Unleash seamless connectivity with a wireless mesh system, keeping even the largest offices mobile.",
+        details: [
+            "Supports up to 30 W80 base stations",
+            "PoE support",
+            "Requires at least two W80 base stations",
+        ],
+        dataSheet: W80BDS,
     },
     {
         id: 15,
         productName: "Yealink CP935W",
         price: 530,
         image: CP935W,
-        category: "conference"
+        category: "conference",
+        description: "Ideal for mid-sized rooms, 6 built-in microphones deliver crystal-clear audio with noise suppression technology.",
+        details: [
+            "5-way conference calling",
+            "Built-in rechargeable lithium battery",
+            "Up to 20 hours talk time (in ideal conditions)",
+            "20-foot (6-meter) and 360° voice pickup",
+            "Built-in Bluetooth and WiFi connectivity",
+        ],
+        dataSheet: CP935WDS,
     },
     {
         id: 16,
         productName: "Yealink BH71",
         price: 80,
         image: BH71,
-        category: "headsets"
+        category: "headsets",
+        description: "Sleek and compact, this headset offers clear audio and a long-lasting battery life, perfect for busy professionals on the move.",
+        details: [
+            "10 hour talk-time",
+            "4-mic array for noise cancellation",
+            "Wireless range of up to 100ft",
+            "Adjustable ear hook for more comfortable wearing",
+            "Fully charged in 90 minutes",
+        ],
+        dataSheet: BH71DS,
     },
     {
         id: 17,
         productName: "Yealink BH76",
         price: 185,
         image: BH76,
-        category: "headsets"
+        category: "headsets",
+        description: "Boasting 4 levels of active noise cancellation, this headset transforms any environment into a productive workspace.",
+        details: [
+            "Active Noise Cancellation",
+            "Up to 40 hours wireless battery life",
+            "Wireless range of up to 100ft",
+            "Dual-side busylight for full visible angles",
+            "Fully charged in 2 hours",
+        ],
+        dataSheet: BH76DS,
     },
     {
         id: 18,
         productName: "Yealink WH62 Mono",
         price: 125,
         image: WH62M,
-        category: "headsets"
+        category: "headsets",
+        description: "Enjoy superior sound quality with convenient on-ear controls for uninterrupted and comfortable communication or collaboration.",
+        details: [
+            "Talking time up to 13 hours",
+            "Adjustable boom arm of 320°",
+            "Wireless range of up to 500ft",
+            "Single, over the ear design",
+            "Charge time of 2.5 hours",
+        ],
+        dataSheet: WH62DS,
     },
     {
         id: 19,
         productName: "Yealink WH62 Dual",
         price: 135,
         image: WH62D,
-        category: "headsets"
+        category: "headsets",
+        description: "Enjoy superior sound quality with convenient on-ear controls for uninterrupted and comfortable communication or collaboration.",
+        details: [
+            "Talking time up to 14 hours",
+            "Adjustable boom arm of 320°",
+            "Wireless range of up to 500ft",
+            "Dual, over the ear design",
+            "Charge time of 2.5 hours",
+        ],
+        dataSheet: WH62DS,
     },
     {
         id: 20,
         productName: "Yealink BH71 Workstation Pro",
         price: 270,
         image: BH71WP,
-        category: "headsets"
+        category: "headsets",
+        description: "Simultaneously connect to your desk phone, PC, and smartphone for an integrated communication experience, streamlining your connectivity across devices.",
+        details: [
+            "Includes BH71 Bluetooth headset",
+            "Portable charging case for hybrid work",
+            "Connect to desk phone, PC, mobile phone",
+            "3-inch touch screen & speakerphone mode",
+            "Built-in 3 USB Hub & Qi wireless charger",
+        ],
+        dataSheet: BH71WPDS,
     },
 
     {
@@ -169,20 +364,30 @@ export const PRODUCTS = [
         productName: "Yealink EXP50 Sidercar",
         price: 109,
         image: EXP50,
-        category: "accessories"
+        category: "accessories",
+        description: "The Yealink EXP50 features a large color LCD, giving you a vivid visual experience. In addition, it provides you with a simple user interface and advanced call handling capabilities.",
+        details: [
+        ],
+        dataSheet: EXP50DS,
     },
     {
         id: 22,
         productName: "Grandstream HT812 Analog Adapter",
         price: 48,
         image: HT812AA,
-        category: "accessories"
+        category: "accessories",
+        description: "Designed for users looking to connect their analog devices to a VoIP network at home or in the office. The HT812 is a powerful analog telephone adapter that is easily deployable and manageable. It comes equipped with 2 FXS ports and an integrated Gigabit NAT router.",
+        details: [
+        ]
     },
     {
         id: 23,
         productName: "Yealink Wall Mount",
         price: 7,
         image: WM,
-        category: "accessories"
+        category: "accessories",
+        description: "Securely mount devices with the Yealink Wall Mount Bracket. This bracket is compatible with the Yealink SIP-T40P, SIP-T41S/41P, SIP-T42S/T42G IP Phones.",
+        details: [
+        ]
     },
 ]

@@ -78,7 +78,7 @@ const CheckOutPage = () => {
                         <Container>
                             <p> Subtotal: ${totalAmount}</p>
                             <Button className="genericButton bg-secondary border-light"
-                                    onClick={() => navigate("/plans")}>Continue Shopping</Button>
+                                    onClick={() => navigate(-1)}>Continue Shopping</Button>
                             <Button onClick={() => setShow(true)} className="genericButton">Checkout</Button>
                         </Container>
 
@@ -86,7 +86,7 @@ const CheckOutPage = () => {
                 ) : (
                     <div className="text-center">
                         <h2 className="text-danger">Your Cart is Empty</h2>
-                        <Button className="genericButton" onClick={() => navigate("/plans")}>Continue Shopping</Button>
+                        <Button className="genericButton" onClick={() => navigate(-1)}>Continue Shopping</Button>
                     </div>
 
                 )}

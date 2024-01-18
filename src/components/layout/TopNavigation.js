@@ -8,10 +8,14 @@ import React, {useState} from "react";
 import CustomNavbarToggle from "./CustomNavbarToggle";
 import {BsCart} from "react-icons/bs"
 import {motion} from "framer-motion"
+import {useLocation} from "react-router-dom";
 
 // need to change the color of the 3 lines when it collapses for smaller screens
 export default function TopNavigation() {
     const [expanded, setExpanded] = useState(false);
+
+    const location = useLocation();
+    const isMoreInfoPage = location.pathname.includes('/products/'); // Adjust based on your route
 
 
     return (
@@ -23,7 +27,7 @@ export default function TopNavigation() {
                 duration: 0.75,
             }}
         >
-            <Navbar expand="md" expanded={expanded} onToggle={() => setExpanded(!expanded)} data-bs-theme="dark">
+            <Navbar expand="md" expanded={expanded} onToggle={() => setExpanded(!expanded)} data-bs-theme="dark"  className={isMoreInfoPage ? "is-more-info-page" : ""}>
                 <Container>
                     <div className="navbar-brand-container"> {/* Flex container for alignment */}
                         <Navbar.Brand href="/">
