@@ -44,7 +44,7 @@ export const PRODUCTS = [
     {
         id: 1,
         productName: "Yealink T31G",
-        price: 70,
+        price: 69.95,
         image: T31G,
         category: "phones",
         description: "Powerful but simple phone with a small footprint. Great for lobbies, labs, and classrooms.",
@@ -60,7 +60,7 @@ export const PRODUCTS = [
     {
         id: 2,
         productName: "Yealink T33G",
-        price: 90,
+        price: 89.95,
         image: T33G,
         category: "phones",
         description: "High quality and cost effective. This color screen phone is perfect for small and large office settings.",
@@ -76,7 +76,7 @@ export const PRODUCTS = [
     {
         id: 3,
         productName: "Yealink T53W",
-        price: 155,
+        price: 154.95,
         image: T53W,
         category: "phones",
         description: "This elegant, entry-level executive phone is powerful and maximizes efficiency with included Wi-Fi and Bluetooth.",
@@ -92,7 +92,7 @@ export const PRODUCTS = [
     {
         id: 4,
         productName: "Yealink T54W",
-        price: 190,
+        price: 189.95,
         image: T54W,
         category: "phones",
         description: "Tailored to high performance executives and professionals. This expandable desk phone is the go-to for large volume workflows.",
@@ -108,7 +108,7 @@ export const PRODUCTS = [
     {
         id: 5,
         productName: "Yealink T57W",
-        price: 250,
+        price: 249.95,
         image: T57W,
         category: "phones",
         description: "The perfect business phone for busy professionals. Its adjustable 7-inch touch screen ensures comfort, rich visuals, and easy navigation.",
@@ -124,7 +124,7 @@ export const PRODUCTS = [
     {
         id: 6,
         productName: "Yealink T58W",
-        price: 375,
+        price: 374.95,
         image: T58W,
         category: "phones",
         description: "A brilliant touchscreen and built-in webcam make this top of the line phone perfect for visionary executives that love the cutting-edge.",
@@ -140,7 +140,7 @@ export const PRODUCTS = [
     {
         id: 7,
         productName: "Yealink W73 Pair",
-        price: 150,
+        price: 149.95,
         image: W73P,
         category: "cordless",
         description: "Designed for modern business on the move, this sleek device offers extended battery life for lasting mobility.",
@@ -156,7 +156,7 @@ export const PRODUCTS = [
     {
         id: 8,
         productName: "Yealink W78 Pair",
-        price: 185,
+        price: 184.95,
         image: W78P,
         category: "cordless",
         description: "With a stylish design and a generous screen, this durable device is your reliable companion for the mobile professional.",
@@ -172,7 +172,7 @@ export const PRODUCTS = [
     {
         id: 9,
         productName: "Yealink W79 Pair (Rugged)",
-        price: 265,
+        price: 264.95,
         image: W79P,
         category: "cordless",
         description: "This rugged device resists dust, water, and drops, ensuring lasting durability in any environment.",
@@ -188,7 +188,7 @@ export const PRODUCTS = [
     {
         id: 10,
         productName: "Yealink W73H (Handset Only)",
-        price: 85,
+        price: 84.95,
         image: W73H,
         category: "cordless",
         description: "Designed for modern business on the move, this sleek device offers extended battery life for lasting mobility.",
@@ -204,7 +204,7 @@ export const PRODUCTS = [
     {
         id: 11,
         productName: "Yealink W78H (Handset Only)",
-        price: 120,
+        price: 119.95,
         image: W78H,
         category: "cordless",
         description: "With a stylish design and a generous screen, this durable device is your reliable companion for the mobile professional.",
@@ -221,7 +221,7 @@ export const PRODUCTS = [
     {
         id: 12,
         productName: "Yealink W59 (Handset Only)",
-        price: 195,
+        price: 194.95,
         image: W59R,
         category: "cordless",
         description: "This rugged device resists dust, water, and drops, ensuring lasting durability in any environment.",
@@ -237,7 +237,7 @@ export const PRODUCTS = [
     {
         id: 13,
         productName: "Yealink W80 Base",
-        price: 275,
+        price: 274.95,
         image: W80B,
         category: "cordless",
         description: "Unleash seamless connectivity with a wireless mesh system, keeping even the largest offices mobile.",
@@ -251,7 +251,7 @@ export const PRODUCTS = [
     {
         id: 14,
         productName: "Yealink W80 Device Manager",
-        price: 275,
+        price: 274.95,
         image: W80B,
         category: "cordless",
         description: "Unleash seamless connectivity with a wireless mesh system, keeping even the largest offices mobile.",
@@ -265,7 +265,7 @@ export const PRODUCTS = [
     {
         id: 15,
         productName: "Yealink CP935W",
-        price: 530,
+        price: 529.95,
         image: CP935W,
         category: "conference",
         description: "Ideal for mid-sized rooms, 6 built-in microphones deliver crystal-clear audio with noise suppression technology.",
@@ -281,7 +281,7 @@ export const PRODUCTS = [
     {
         id: 16,
         productName: "Yealink BH71",
-        price: 80,
+        price: 79.95,
         image: BH71,
         category: "headsets",
         description: "Sleek and compact, this headset offers clear audio and a long-lasting battery life, perfect for busy professionals on the move.",
@@ -297,7 +297,7 @@ export const PRODUCTS = [
     {
         id: 17,
         productName: "Yealink BH76",
-        price: 185,
+        price: 184.95,
         image: BH76,
         category: "headsets",
         description: "Boasting 4 levels of active noise cancellation, this headset transforms any environment into a productive workspace.",
@@ -313,7 +313,7 @@ export const PRODUCTS = [
     {
         id: 18,
         productName: "Yealink WH62 Mono",
-        price: 125,
+        price: 124.95,
         image: WH62M,
         category: "headsets",
         description: "Enjoy superior sound quality with convenient on-ear controls for uninterrupted and comfortable communication or collaboration.",
@@ -329,7 +329,7 @@ export const PRODUCTS = [
     {
         id: 19,
         productName: "Yealink WH62 Dual",
-        price: 135,
+        price: 134.95,
         image: WH62D,
         category: "headsets",
         description: "Enjoy superior sound quality with convenient on-ear controls for uninterrupted and comfortable communication or collaboration.",
@@ -345,7 +345,7 @@ export const PRODUCTS = [
     {
         id: 20,
         productName: "Yealink BH71 Workstation Pro",
-        price: 270,
+        price: 269.95,
         image: BH71WP,
         category: "headsets",
         description: "Simultaneously connect to your desk phone, PC, and smartphone for an integrated communication experience, streamlining your connectivity across devices.",
@@ -362,7 +362,7 @@ export const PRODUCTS = [
     {
         id: 21,
         productName: "Yealink EXP50 Sidercar",
-        price: 109,
+        price: 108.95,
         image: EXP50,
         category: "accessories",
         description: "The Yealink EXP50 features a large color LCD, giving you a vivid visual experience. In addition, it provides you with a simple user interface and advanced call handling capabilities.",
@@ -373,7 +373,7 @@ export const PRODUCTS = [
     {
         id: 22,
         productName: "Grandstream HT812 Analog Adapter",
-        price: 48,
+        price: 47.95,
         image: HT812AA,
         category: "accessories",
         description: "Designed for users looking to connect their analog devices to a VoIP network at home or in the office. The HT812 is a powerful analog telephone adapter that is easily deployable and manageable. It comes equipped with 2 FXS ports and an integrated Gigabit NAT router.",
@@ -383,7 +383,7 @@ export const PRODUCTS = [
     {
         id: 23,
         productName: "Yealink Wall Mount",
-        price: 7,
+        price: 6.95,
         image: WM,
         category: "accessories",
         description: "Securely mount devices with the Yealink Wall Mount Bracket. This bracket is compatible with the Yealink SIP-T40P, SIP-T41S/41P, SIP-T42S/T42G IP Phones.",

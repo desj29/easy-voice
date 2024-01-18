@@ -13,7 +13,7 @@ export default function Footer() {
                         <img className="align-self-center w-75 d-none d-sm-block" src={logo} alt="Easy Voice"/>
                         {/*smaller logo for mobile*/}
                         <img className="align-self-center w-50 d-sm-none" src={logo} alt="Easy Voice"/>
-                        <p className="text-white text-center copyRight">© 2023 Easy Voice, LLC. Intellectual Property.
+                        <p className="text-white text-center copyRight">© 2024 Easy Voice, LLC. Intellectual Property.
                             All rights reserved.</p>
                     </Col>
                     {/*this column is hidden for mobile so use non-essential links*/}
