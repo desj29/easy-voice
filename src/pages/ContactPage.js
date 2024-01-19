@@ -2,13 +2,11 @@ import {Col, Container, Image, Row} from "react-bootstrap";
 import "../styling/ContactPage.css";
 import {FaPhoneAlt} from "react-icons/fa";
 import {MdEmail} from "react-icons/md";
-/* import React, {useState} from "react"; */
 import contactArt from "../assets/ContactArt.webp";
 import transition from "../transition";
 
 
 const ContactPage = () => {
-    /* const [show, setShow] = useState(false); */
     return (
         <>
             <Row className="align-items-center contactPageHeader">
