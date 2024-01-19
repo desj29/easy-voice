@@ -8,9 +8,7 @@ import transition from "../transition";
 
 
 const ContactPage = () => {
-    const [show, setShow] = useState(false);
-
-
+    /* const [show, setShow] = useState(false); */
     return (
         <>
             <Row className="align-items-center contactPageHeader">
