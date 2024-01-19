@@ -16,7 +16,7 @@ const PlanPage = () => {
             {/* Header with page title */}
             <Row className="align-items-center planPageHeader">
                 <div className="black-overlay"></div>
-                <h1 className="text-white text-center">Discover Your Perfect Business Plan</h1>
+                <h1 className="text-white text-center">Discover The Perfect Easy Voice Business Plan</h1>
             </Row>
             <Container className="pt-5">
                 {/* Plan selection and information section */}

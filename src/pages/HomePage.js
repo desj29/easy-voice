@@ -16,7 +16,7 @@ const HomePage = () => {
                 <Carousel.Item>
                     <Image className="opacity-25" src={voipImg} alt="voip image" fluid/>
                     <Carousel.Caption>
-                        <h3>Seamless Communication with VoIP</h3>
+                        <h1>Seamless Communication with VoIP</h1>
                         <p>Connect globally with Voice over Internet Protocol and experience crystal-clear calls with
                             reduced costs.</p>
                     </Carousel.Caption>
@@ -24,7 +24,7 @@ const HomePage = () => {
                 <Carousel.Item>
                     <Image className="opacity-25" src={networkImg} alt="network image" fluid/>
                     <Carousel.Caption>
-                        <h3>Robust Networking Solutions</h3>
+                        <h1>Robust Networking Solutions</h1>
                         <p>Our network infrastructure ensures your business stays connected with unmatched reliability
                             and speed.</p>
                     </Carousel.Caption>
@@ -32,7 +32,7 @@ const HomePage = () => {
                 <Carousel.Item>
                     <Image className="opacity-25" src={cloudImg} alt="cloud image" fluid/>
                     <Carousel.Caption>
-                        <h3>Cloud Services for Businesses</h3>
+                        <h1>Cloud Services for Businesses</h1>
                         <p>Embrace the cloud for secure, scalable, and accessible data storage and management
                             solutions.</p>
                     </Carousel.Caption>
