@@ -1,11 +1,11 @@
 import {Button, FloatingLabel, Form, Modal, OverlayTrigger, Popover, Toast, ToastContainer} from "react-bootstrap";
 import React, {useContext, useRef, useState} from "react";
 import emailjs from '@emailjs/browser';
-import {PLANS} from "../../PLANS";
+import {PLANS} from "../../DATABASE/PLANS";
 import {ShopContext} from "../../context/shop-context";
 import {IoIosWarning} from "react-icons/io";
-import {ADDONS} from "../../ADDONS";
-import {PRODUCTS} from "../../PRODUCTS";
+import {ADDONS} from "../../DATABASE/ADDONS";
+import {PRODUCTS} from "../../DATABASE/PRODUCTS";
 
 export default function CartModal({showModal, closeModal}) {
     const form = useRef();

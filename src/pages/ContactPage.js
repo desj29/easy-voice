@@ -3,7 +3,7 @@ import "../styling/ContactPage.css";
 import {FaPhoneAlt} from "react-icons/fa";
 import {MdEmail} from "react-icons/md";
 import contactArt from "../assets/ContactArt.webp";
-import transition from "../transition";
+import transition from "../components/layout/transition";
 
 
 const ContactPage = () => {

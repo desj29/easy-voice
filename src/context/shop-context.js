@@ -1,7 +1,7 @@
 import {createContext, useState} from "react";
-import {PLANS} from "../PLANS";
-import {ADDONS} from "../ADDONS";
-import {PRODUCTS} from "../PRODUCTS";
+import {PLANS} from "../DATABASE/PLANS";
+import {ADDONS} from "../DATABASE/ADDONS";
+import {PRODUCTS} from "../DATABASE/PRODUCTS";
 
 export const ShopContext = createContext(null);
 

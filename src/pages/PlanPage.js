@@ -4,8 +4,8 @@ import React, {useState} from "react";
 import {FaCheck} from "react-icons/fa";
 import {FaXmark} from "react-icons/fa6";
 import PlanCard from "../components/PlanCard";
-import {PLANS} from "../PLANS";
-import transition from "../transition";
+import {PLANS} from "../DATABASE/PLANS";
+import transition from "../components/layout/transition";
 
 
 const PlanPage = () => {

@@ -1,33 +1,40 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import TopNavigation from "./components/layout/TopNavigation";
-import {BrowserRouter} from "react-router-dom";
-import React, {useState} from "react";
-import Footer from "./components/layout/Footer";
-import ContactFormModal from "./components/ContactFormModal";
+import {BrowserRouter, Route, Routes, useLocation} from "react-router-dom";
+import React, {lazy, Suspense, useState} from "react";
 import './styling/App.css';
-import {Button} from "react-bootstrap";
-import {MdEmail} from "react-icons/md";
-import {ShopContextProvider} from "./context/shop-context";
-import AnimatedRoutes from "./components/layout/AnimatedRoutes";
+import Layout from "./components/layout/Layout";
+import Home from "./pages/HomePage";
+import PlanPage from "./pages/PlanPage";
+import AddOnsPage from "./pages/AddOnsPage";
+import ProductPage from "./pages/ProductPage";
+import ContactPage from "./pages/ContactPage";
+import Cart from "./pages/CheckOutPage";
+import ErrorPage from "./pages/ErrorPage";
+import {AnimatePresence} from "framer-motion";
 
 function App() {
-    const [show, setShow] = useState(false);
+    const MoreInfoPage = lazy(() => import("./pages/MoreInfoPage"));
+    const location = useLocation();
 
     return (
-        <div className="siteContainer">
-            <ShopContextProvider>
-                <BrowserRouter>
-                    <TopNavigation/>
-                    <main className="contentWrap">
-                        <AnimatedRoutes/>
-                    </main>
-
-                    <Button onClick={() => setShow(true)} className="chatButton" size="sm"><MdEmail/> </Button>
-                    <ContactFormModal showModal={show} closeModal={() => setShow(false)}/>
-                    <Footer/>
-                </BrowserRouter>
-            </ShopContextProvider>
-        </div>
+        <AnimatePresence mode="wait">
+            <Routes location={location} key={location.pathname}>
+                <Route path="/" element={<Layout/>}>
+                    <Route index element={<Home/>}/>
+                    <Route path="plans" element={<PlanPage/>}/>
+                    <Route path="addons" element={<AddOnsPage/>}/>
+                    <Route path="products" element={<ProductPage/>}/>
+                    <Route path="products/:id" element={
+                        <Suspense fallback="Loading...">
+                            <MoreInfoPage/>
+                        </Suspense>
+                    }/>
+                    <Route path="contact" element={<ContactPage/>}/>
+                    <Route path="cart" element={<Cart/>}/>
+                    <Route path="*" element={<ErrorPage/>}/>
+                </Route>
+            </Routes>
+        </AnimatePresence>
     );
 }
 

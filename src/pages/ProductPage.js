@@ -1,8 +1,8 @@
 import {Col, Container, Row, Tab, Tabs} from "react-bootstrap";
-import transition from "../transition";
+import transition from "../components/layout/transition";
 import React from "react";
 import "../styling/ProductPage.css";
-import {PRODUCTS} from "../PRODUCTS";
+import {PRODUCTS} from "../DATABASE/PRODUCTS";
 import ProductCard from "../components/ProductCard";
 
 

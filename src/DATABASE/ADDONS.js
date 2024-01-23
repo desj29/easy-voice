@@ -1,6 +1,6 @@
-import devices from "./assets/GuyOnLaptop.webp";
-import teams from "./assets/AdobeStock_523407917_Editorial_Use_Only.webp";
-import hotel from "./assets/AdobeStock_579459725.webp";
+import devices from "../assets/GuyOnLaptop.webp";
+import teams from "../assets/AdobeStock_523407917_Editorial_Use_Only.webp";
+import hotel from "../assets/AdobeStock_579459725.webp";
 
 export const ADDONS = [
     {

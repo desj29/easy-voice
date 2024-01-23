@@ -1,15 +1,15 @@
 import {Button, Container, Row, Table} from "react-bootstrap";
-import {PLANS} from "../PLANS";
+import {PLANS} from "../DATABASE/PLANS";
 import React, {useContext, useState} from "react";
 import {ShopContext} from "../context/shop-context";
 import CartPlanItem from "../components/cart/CartPlanItem";
 import {useNavigate} from "react-router-dom";
 import CartModal from "../components/cart/CartModal";
-import transition from "../transition";
+import transition from "../components/layout/transition";
 import "../styling/PlanAndCart.css";
-import {ADDONS} from "../ADDONS";
+import {ADDONS} from "../DATABASE/ADDONS";
 import CartAddonItem from "../components/cart/CartAddonItem";
-import {PRODUCTS} from "../PRODUCTS";
+import {PRODUCTS} from "../DATABASE/PRODUCTS";
 import CartProductItem from "../components/cart/CartProductItem";
 
 

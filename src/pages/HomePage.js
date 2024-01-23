@@ -7,7 +7,7 @@ import phone from "../assets/WomanOnPhone.webp";
 import guy from "../assets/ManOnPhoneAndLaptop.webp";
 import team from "../assets/CallCenter.webp";
 import {motion} from "framer-motion"
-import transition from "../transition";
+import transition from "../components/layout/transition";
 
 const HomePage = () => {
     return (
@@ -106,7 +106,7 @@ const HomePage = () => {
                             </Card.Body>
 
                             <Card.Footer>
-                                <Button className="genericButton" href="#">
+                                <Button className="genericButton" href="/contact">
                                     Learn More
                                 </Button>
                             </Card.Footer>
@@ -114,89 +114,6 @@ const HomePage = () => {
                     </CardGroup>
                 </Row>
             </Container>
-            {/*<Container className="roundTop">*/}
-            {/*<Row className="py-4 align-items-center">*/}
-            {/*    <Col lg={6} className="order-lg-2">*/}
-            {/*        <Image className="mx-auto" src={devices} alt="Seamless integration" fluid/>*/}
-            {/*    </Col>*/}
-            {/*    <Col lg={6} className="order-lg-1">*/}
-            {/*        <div className="text-center">*/}
-
-            {/*            <h2 className="mb-3">Find Your Perfect Business Communication Solution</h2>*/}
-            {/*            <p className="mb-4">*/}
-            {/*                Unlock the full potential of your business with Easy Voice's comprehensive suite of*/}
-            {/*                digital communication tools. Our solutions are crafted to enhance reliability,*/}
-            {/*                streamline operations, and pave the way for scalable growth. Step into the future of*/}
-            {/*                seamless connectivity with a plan tailored to your unique needs.*/}
-            {/*            </p>*/}
-            {/*            <Button variant="outline-light" className="genericButton" href="/pricing">View*/}
-            {/*                Plans</Button>*/}
-            {/*        </div>*/}
-            {/*    </Col>*/}
-            {/*</Row>*/}
-            {/*<Row className="darkRow py-4">*/}
-            {/*    <Col lg={6} className="my-auto">*/}
-            {/*        <img className="img-fluid mx-auto" src={phone} alt="Advanced communication technology"/>*/}
-            {/*    </Col>*/}
-            {/*    <Col lg={6} className="my-auto textDarkRow">*/}
-            {/*        <div className="text-center">*/}
-            {/*            <h2 className="mb-3">Seamless Integration</h2>*/}
-            {/*            <p className="mb-4">*/}
-            {/*                Integrate our VOIP technology into your existing systems with ease. Our solutions are designed to be compatible with a wide range of hardware and software, ensuring a smooth transition and continued productivity.*/}
-            {/*            </p>*/}
-            {/*            <Button variant="secondary" className="genericButton" href="#">Learn How</Button>*/}
-            {/*        </div>*/}
-            {/*    </Col>*/}
-            {/*</Row>*/}
-
-
-            {/*</Container>*/}
-
-            {/*<Container fluid>*/}
-            {/*    <Row className="p-5">*/}
-            {/*        <Col sm={12} className="d-flex justify-content-center">*/}
-            {/*            <div className="text-container" style={{ maxWidth: '500px'}}>*/}
-            {/*                <h1 className="textLightRow pb-2">Easy Voice</h1>*/}
-            {/*                <hr className="titleHr" />*/}
-            {/*                <p className="textLightRow mt-3">*/}
-            {/*                    Easy Voice is a simple, straightforward app that connects businesses.*/}
-            {/*                    It’s a two-way street that works for everyone.*/}
-            {/*                    For a better way to work and a better way to live.*/}
-            {/*                </p>*/}
-            {/*            </div>*/}
-            {/*        </Col>*/}
-            {/*    </Row>*/}
-            {/*    <Row className="darkRow p-3">*/}
-            {/*        <Col lg={6}>*/}
-            {/*            <img className="d-block m-auto mx-auto w-50" src={phone} alt="phone image"/>.*/}
-            {/*        </Col>*/}
-            {/*        <Col lg={6} md={12} >*/}
-            {/*            <h3 className="m-3 textDarkRow">VOIP | NETWORK | CLOUD</h3>*/}
-            {/*            <h1 className="textDarkRow">Communication</h1>*/}
-            {/*            <h1 className="textDarkRow">Made Easy</h1>*/}
-            {/*            <div className="d-flex justify-content-center m-3">*/}
-            {/*                <Button className="genericButton" href="#">*/}
-            {/*                    Learn More*/}
-            {/*                </Button>*/}
-            {/*            </div>*/}
-            {/*        </Col>*/}
-            {/*    </Row>*/}
-            {/*    <Row className="p-3">*/}
-            {/*        <Col lg={6} md={12}>*/}
-            {/*            <h3 className="m-3 textLightRow">VOIP | NETWORK | CLOUD</h3>*/}
-            {/*            <h1 className="textLightRow">Communication</h1>*/}
-            {/*            <h1 className="textLightRow">Made Easy</h1>*/}
-            {/*            <div className="d-flex justify-content-center m-3">*/}
-            {/*                <Button className="genericButton" href="#">*/}
-            {/*                    Learn More*/}
-            {/*                </Button>*/}
-            {/*            </div>*/}
-            {/*        </Col>*/}
-            {/*        <Col lg={6}>*/}
-            {/*            <img className="d-block m-auto mx-auto w-50" src={devices} alt="phone image"/>*/}
-            {/*        </Col>*/}
-            {/*    </Row>*/}
-            {/*</Container>*/}
         </>
 
 

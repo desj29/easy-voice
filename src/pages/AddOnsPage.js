@@ -1,8 +1,8 @@
 import {Col, Container, Row} from "react-bootstrap";
 import "../styling/AddOnsPage.css";
 import React from "react";
-import transition from "../transition";
-import {ADDONS} from "../ADDONS";
+import transition from "../components/layout/transition";
+import {ADDONS} from "../DATABASE/ADDONS";
 import AddOnCard from "../components/AddOnCard";
 
 

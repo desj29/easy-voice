@@ -1,8 +1,8 @@
 import {Button, Col, Container, Image, Row} from "react-bootstrap";
-import transition from "../transition";
+import transition from "../components/layout/transition";
 import {useNavigate, useParams} from "react-router-dom";
 import "../styling/MoreInfoPage.css";
-import {PRODUCTS} from "../PRODUCTS";
+import {PRODUCTS} from "../DATABASE/PRODUCTS";
 import React from "react";
 import { IoArrowBackCircleSharp } from "react-icons/io5";
 const MoreInfoPage = () => {
