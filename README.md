@@ -41,8 +41,10 @@ locally for testing.
 
 1.  cd easy-voice root folder
 2.  gcloud init
-3.  ```bash gcloud auth configure-docker us-central1-docker.pkg.dev ```
-4.  docker build --platform linux/amd64 -t us-central1-docker.pkg.dev/easy-voice/easy-voice/easy-voice-web .
+```bash
+gcloud auth configure-docker us-central1-docker.pkg.dev
+```
+5.  docker build --platform linux/amd64 -t us-central1-docker.pkg.dev/easy-voice/easy-voice/easy-voice-web .
 6.  docker push us-central1-docker.pkg.dev/easy-voice/easy-voice/easy-voice-web
 7.  Login to Cloud Run and select new docker source.
 
