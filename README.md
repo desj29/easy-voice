@@ -49,7 +49,8 @@ gcloud init
 gcloud auth configure-docker us-central1-docker.pkg.dev
 ```
 
-```bash docker build --platform linux/amd64 -t us-central1-docker.pkg.dev/easy-voice/easy-voice/easy-voice-web .
+```bash
+docker build --platform linux/amd64 -t us-central1-docker.pkg.dev/easy-voice/easy-voice/easy-voice-web .
 ```
 
 ```bash
