@@ -37,6 +37,16 @@ locally for testing.
 
    This command reads the Dockerfile in the current directory and builds a Docker image named `your-image-name`.
 
+## Build for Cloud Run
+
+1.  cd easy-voice root folder
+2.  gcloud init
+3.  gcloud auth configure-docker us-central1-docker.pkg.dev 
+4.  docker build --platform linux/amd64 -t us-central1-docker.pkg.dev/easy-voice/easy-voice/easy-voice-web .
+6.  docker push us-central1-docker.pkg.dev/easy-voice/easy-voice/easy-voice-web
+7.  Login to Cloud Run and select new docker source.
+
+
 ## Running the Docker Image
 
 Once the image is built, you can run it locally to test if the application is running as expected.
