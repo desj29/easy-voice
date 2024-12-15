@@ -17,9 +17,8 @@ const AddOnsPage = () => {
             <Container className="py-5">
                 <Row>
                     <Col className="text-center textLightRow m-3" sm={12}>
-                        <h2>Build and Expand Your Business with Confidence.</h2>
-                        <p>Find the perfect plan tailored to your specific business requirements while optimizing
-                            costs.</p>
+                        <h2>Enhance Your Plan with Add-Ons</h2>
+                        <p>Customize your plan with our add-ons to elevate your communication capabilities. Ideal for businesses seeking to optimize their communication systems.</p>
                     </Col>
                 </Row>
                 <Row>

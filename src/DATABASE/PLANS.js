@@ -2,7 +2,7 @@ export const PLANS = [
     {
         id: 1,
         badge: "silverBadge",
-        productName: "Silver Package",
+        productName: "Essentials Plan",
         price: 24.95,
         features: [
             "Unlimited Extensions",
@@ -19,7 +19,7 @@ export const PLANS = [
     {
         id: 2,
         badge: "goldBadge",
-        productName: "Gold Package",
+        productName: "Professional Plan",
         price: 29.95,
         features: [
             "Unlimited Extensions",
@@ -36,7 +36,7 @@ export const PLANS = [
     {
         id: 3,
         badge: "diamondBadge",
-        productName: "Diamond Package",
+        productName: "Premium Plan",
         price: 34.95,
         features: [
             "Unlimited Extensions",
@@ -55,7 +55,7 @@ export const PLANS = [
     {
         id: 4,
         badge: "blackBadge",
-        productName: "Enterprise Package",
+        productName: "Enterprise Plan",
         price: 40.95,
         features: [
             "Unlimited Extensions",

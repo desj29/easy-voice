@@ -16,25 +16,22 @@ const HomePage = () => {
                 <Carousel.Item>
                     <Image className="opacity-25" src={voipImg} alt="voip image" fluid/>
                     <Carousel.Caption>
-                        <h1>Seamless Communication with VoIP</h1>
-                        <p>Connect globally with Voice over Internet Protocol and experience crystal-clear calls with
-                            reduced costs.</p>
+                        <h1>Streamline Your Business Communication with VoIP</h1>
+                        <p>Connect globally using Voice over Internet Protocol for crystal-clear calls and cost-effective solutions.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <Image className="opacity-25" src={networkImg} alt="network image" fluid/>
                     <Carousel.Caption>
-                        <h1>Robust Networking Solutions</h1>
-                        <p>Our network infrastructure ensures your business stays connected with unmatched reliability
-                            and speed.</p>
+                        <h1>Reliable Networking Solutions for Your Business</h1>
+                        <p>Our robust network infrastructure guarantees your business stays seamlessly connected with unparalleled reliability and speed.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <Image className="opacity-25" src={cloudImg} alt="cloud image" fluid/>
                     <Carousel.Caption>
-                        <h1>Cloud Services for Businesses</h1>
-                        <p>Embrace the cloud for secure, scalable, and accessible data storage and management
-                            solutions.</p>
+                        <h1>Enhance Your Business with VoIP and Other Essential SMB Cloud Services</h1>
+                        <p>Experience crystal-clear calls and cost-effective solutions with Voice over Internet Protocol, alongside our range of essential cloud services for small businesses.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
@@ -42,26 +39,19 @@ const HomePage = () => {
                 <Row className="py-5 justify-content-center">
                     <Col lg={8} md={10}>
                         <div className="text-center textDarkRow fadeInScroll">
-                            <motion.h1 animate={{scale: 1}} initial={{scale: 0}} className="display-4 mb-3">
-                                Connect and Explore with Easy Voice
-                            </motion.h1>
+                            <h1 className="display-4 mb-3">
+                                Drive Cost Efficiency and Tailored Solutions with Easy Voice
+                            </h1>
                             <hr className="styledGradient"/>
                             <p className="lead">
-                                For over 15 years, Easy Voice LLC has been a dedicated supporter of the business sector,
-                                providing a range of comprehensive solutions for enterprises. Our offerings include
-                                versatile Cloud Services, advanced Cloud-Based PBX Systems, and customized development
-                                solutions tailored to meet diverse business needs.
-                                {/*Harness the power of advanced VOIP, expansive NETWORK capabilities, and scalable CLOUD*/}
-                                {/*solutions. Discover our range of voice plans, add-ons, and long-term contracts designed*/}
-                                {/*for seamless communication. Easy Voice bridges the communication gap for businesses and*/}
-                                {/*fosters seamless interactions across platforms.*/}
+                                Easy Voice LLC specializes in empowering small businesses, hotels, and enterprises to optimize operational costs with our Voip solutions. Explore our comprehensive range of services including Cloud Services, advanced Cloud-Based PBX Systems, and customized development options designed to meet diverse business needs.
                             </p>
                         </div>
                     </Col>
                 </Row>
-                <Row className="mx-5">
+                <Row className="mx-5 d-none d-lg-block">
                     <CardGroup>
-                        <Card className="border-black">
+                        <Card className="border-black rounded-4 pt-4">
                             <Card.Img variant="top" src={guy}/>
                             <Card.Body>
                                 <Card.Title>Plans</Card.Title>
@@ -77,7 +67,7 @@ const HomePage = () => {
                                 </Button>
                             </Card.Footer>
                         </Card>
-                        <Card className="border-black">
+                        <Card className="border-black rounded-4 pt-4">
                             <Card.Img variant="top" src={phone}/>
                             <Card.Body>
                                 <Card.Title>Add-Ons</Card.Title>
@@ -93,25 +83,70 @@ const HomePage = () => {
                                 </Button>
                             </Card.Footer>
                         </Card>
-                        <Card className="border-black">
+                        <Card className="border-black rounded-4 pt-4">
                             <Card.Img variant="top" src={team}/>
                             <Card.Body>
-                                <Card.Title>Contracts</Card.Title>
+                                <Card.Title>Long-Term Contracts</Card.Title>
                                 <Card.Text>
-                                    Discover the benefits of our long-term contracts, specially designed for businesses
-                                    seeking stability and value. Opt for our 3 to 5-year plans and enjoy substantial
-                                    discounts, ensuring cost-effective communication solutions over the long term.
-                                    Please contact a team member if interested.
+                                    Experience the advantages of our long-term contracts, tailored for businesses seeking stability and value. Choose from our 3 to 5-year plans and benefit from substantial discounts, ensuring cost-effective communication solutions over time. Contact a team member for more details.
+                                </Card.Text>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button className="genericButton" href="/contact">
+                                    Contact Us
+                                </Button>
+                            </Card.Footer>
+                        </Card>
+                    </CardGroup>
+                </Row>
+                <Row className="mx-5 d-block d-lg-none">
+                        <Card className="border-black rounded-4 pt-4">
+                            <Card.Img variant="top" src={guy}/>
+                            <Card.Body>
+                                <Card.Title>Plans</Card.Title>
+                                <Card.Text>
+                                    Choose from a variety of plans tailored for different business sizes. Our plans
+                                    offer essential communication tools like HD voice calls and video conferencing,
+                                    backed by reliable support. Ideal for seamless day-to-day business communications.
+                                </Card.Text>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button className="genericButton" href="/plans">
+                                    Learn More
+                                </Button>
+                            </Card.Footer>
+                        </Card>
+                        <Card className="border-black rounded-4 pt-4">
+                            <Card.Img variant="top" src={phone}/>
+                            <Card.Body>
+                                <Card.Title>Add-Ons</Card.Title>
+                                <Card.Text>
+                                    Customize your plan with add-ons. These features enhance your communication
+                                    capabilities and are perfect for businesses looking to optimize their communication
+                                    systems.
+                                </Card.Text>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button className="genericButton" href="/addons">
+                                    Learn More
+                                </Button>
+                            </Card.Footer>
+                        </Card>
+                        <Card className="border-black rounded-4 pt-4">
+                            <Card.Img variant="top" src={team}/>
+                            <Card.Body>
+                                <Card.Title>Long-Term Contracts</Card.Title>
+                                <Card.Text>
+                                    Experience the advantages of our long-term contracts, tailored for businesses seeking stability and value. Choose from our 3 to 5-year plans and benefit from substantial discounts, ensuring cost-effective communication solutions over time. Contact a team member for more details.
                                 </Card.Text>
                             </Card.Body>
 
                             <Card.Footer>
                                 <Button className="genericButton" href="/contact">
-                                    Learn More
+                                    Contact Us
                                 </Button>
                             </Card.Footer>
                         </Card>
-                    </CardGroup>
                 </Row>
             </Container>
         </>

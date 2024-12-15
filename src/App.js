@@ -11,6 +11,8 @@ import ContactPage from "./pages/ContactPage";
 import Cart from "./pages/CheckOutPage";
 import ErrorPage from "./pages/ErrorPage";
 import {AnimatePresence} from "framer-motion";
+import RegisterPage from "./pages/RegisterPage";
+import AboutUsPage from "./pages/AboutUsPage";
 
 function App() {
     const MoreInfoPage = lazy(() => import("./pages/MoreInfoPage"));
@@ -21,6 +23,7 @@ function App() {
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<Layout/>}>
                     <Route index element={<Home/>}/>
+                    <Route path="register" element={<RegisterPage/>}/>
                     <Route path="plans" element={<PlanPage/>}/>
                     <Route path="addons" element={<AddOnsPage/>}/>
                     <Route path="products" element={<ProductPage/>}/>
@@ -29,6 +32,7 @@ function App() {
                             <MoreInfoPage/>
                         </Suspense>
                     }/>
+                    <Route path="about-us" element={<AboutUsPage/>}/>
                     <Route path="contact" element={<ContactPage/>}/>
                     <Route path="cart" element={<Cart/>}/>
                     <Route path="*" element={<ErrorPage/>}/>

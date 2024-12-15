@@ -22,9 +22,11 @@ const PlanPage = () => {
                 {/* Plan selection and information section */}
                 <Row>
                     <Col className="text-center textLightRow m-3" sm={12}>
-                        <h2>Build and Expand Your Business with Confidence.</h2>
-                        <p>Find the perfect plan tailored to your specific business requirements while optimizing
-                            costs.</p>
+                        <h2>Flexible Communication Plans</h2>
+                        <p>
+                            Select from a range of plans designed to fit businesses of all sizes. Our plans provide essential communication tools such as HD voice calls and video conferencing, supported by dependable customer service. Perfect for seamless daily business communications.
+                            Additionally, we offer specialized add-on products tailored for the hotel industry and solutions for enhanced cell phone connectivity.
+                        </p>
 
                         <ButtonGroup>
                             <Button className={yearly ? "timeButton" : "timeButton activeTime"} onClick={() => {
@@ -54,10 +56,10 @@ const PlanPage = () => {
                         <thead>
                         <tr>
                             <th>Core Feature</th>
-                            <th><Badge pill className="silverBadge">Silver Package</Badge></th>
-                            <th><Badge pill className="goldBadge">Gold Package</Badge></th>
-                            <th><Badge pill className="diamondBadge">Diamond Package</Badge></th>
-                            <th><Badge pill className="blackBadge">Enterprise Package</Badge></th>
+                            <th><Badge pill className="silverBadge">Essentials Plan</Badge></th>
+                            <th><Badge pill className="goldBadge">Professional Plan</Badge></th>
+                            <th><Badge pill className="diamondBadge">Premium Plan</Badge></th>
+                            <th><Badge pill className="blackBadge">Enterprise Plan</Badge></th>
                         </tr>
                         </thead>
                         <tbody>

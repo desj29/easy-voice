@@ -1,17 +1,22 @@
-import {Button, FloatingLabel, Form, Modal, OverlayTrigger, Popover, Toast, ToastContainer} from "react-bootstrap";
+import {Button, Form, Modal, OverlayTrigger, Popover, Toast, ToastContainer} from "react-bootstrap";
 import React, {useContext, useRef, useState} from "react";
-import emailjs from '@emailjs/browser';
 import {PLANS} from "../../DATABASE/PLANS";
 import {ShopContext} from "../../context/shop-context";
 import {IoIosWarning} from "react-icons/io";
 import {ADDONS} from "../../DATABASE/ADDONS";
 import {PRODUCTS} from "../../DATABASE/PRODUCTS";
+import axios from "axios";
 
 export default function CartModal({showModal, closeModal}) {
     const form = useRef();
     const [emailStatus, setEmailStatus] = useState();
     const [showToast, setShowToast] = useState(false);
     const {cartPlanItems, numPhones, yearlyStates, cartAddonItems, cartProductItems} = useContext(ShopContext);
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [subject, setSubject] = useState("");
+    const [message, setMessage] = useState("");
+
 
     const popover = (
         <Popover id="popover-basic">
@@ -57,15 +62,19 @@ export default function CartModal({showModal, closeModal}) {
     };
 
     const sendEmail = (e) => {
-        e.preventDefault();
+        e.preventDefault(e);
         const cartPlanItemsString = formatCartItemsForEmail();
         const formData = new FormData(form.current);
         formData.append("cart_items", cartPlanItemsString);
-        if (form.current.checkValidity()) {
-            emailjs.sendForm('service_i0961f7', 'template_v1kjelf', form.current, 'nVRq3VPb4X4R9hGlf')
-                .then((result) => {
+        setMessage(cartPlanItemsString);
+        axios.post('http://localhost:5000/send_email', {
+            name,
+            email,
+            subject,
+            message
+        })
+                .then(() => {
                     setEmailStatus(true);
-                    console.log(result.text);
                     closeModal();
                     setShowToast(true);
                 }, (error) => {
@@ -73,9 +82,7 @@ export default function CartModal({showModal, closeModal}) {
                     console.log(error.text);
                     setShowToast(true);
                 });
-            e.target.reset();
-
-        }
+        e.target.reset();
     };
 
     return (
@@ -88,22 +95,15 @@ export default function CartModal({showModal, closeModal}) {
                 <Form ref={form} onSubmit={sendEmail}>
                     <Modal.Body>
                         <Form.Group controlId="formBasicName" className="mb-3">
-                            <FloatingLabel controlId="user_name" label="Full Name">
-                                <Form.Control type="text" name="user_name" placeholder="Enter your full name" required/>
-                            </FloatingLabel>
+                                <Form.Control onChange={(e) => setName(e.target.value)} size="sm" name="user_name" placeholder="Full Name" required/>
                         </Form.Group>
 
                         <Form.Group controlId="formBasicEmail" className="mb-3">
-                            <FloatingLabel controlId="user_email" label="Email">
-                                <Form.Control type="email" name="user_email" placeholder="Enter your email" required/>
-                            </FloatingLabel>
+                                <Form.Control onChange={(e) => setEmail(e.target.value)} size="sm" type="email" name="user_email" placeholder="Email" required/>
                         </Form.Group>
 
                         <Form.Group controlId="formBasicPhoneNumber" className="mb-3">
-                            <FloatingLabel controlId="phone_number" label="Phone Number">
-                                <Form.Control type="phone" name="phone_number" placeholder="Enter your phone number"
-                                              required/>
-                            </FloatingLabel>
+                                <Form.Control onChange={(e) => setSubject(e.target.value)} size="sm" type="phone" name="phone_number" placeholder="Phone Number" required/>
                         </Form.Group>
 
                         <Form.Control type="hidden" name="cart_items" value={formatCartItemsForEmail()}/>

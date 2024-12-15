@@ -1,32 +1,60 @@
-import {Button, FloatingLabel, Form, Modal, Toast, ToastContainer} from "react-bootstrap";
+import {Button, Form, Modal, Toast, ToastContainer} from "react-bootstrap";
 import React, {useRef, useState} from "react";
-import emailjs from '@emailjs/browser';
+import axios from "axios";
 
 export default function ContactFormModal({showModal, closeModal}) {
     const form = useRef();
     const [emailStatus, setEmailStatus] = useState();
     const [showToast, setShowToast] = useState(false);
 
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [subject, setSubject] = useState("");
+    const [message, setMessage] = useState("");
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+    // const sendEmail = async (e) => {
+    //     e.preventDefault();
+    //     let response = await fetch()
+    // }
 
-        if (form.current.checkValidity()) {
-            emailjs.sendForm('service_i0961f7', 'template_v2dgly9', form.current, 'nVRq3VPb4X4R9hGlf')
-                .then((result) => {
-                    setEmailStatus(true);
-                    console.log(result.text);
-                    closeModal();
-                    setShowToast(true);
-                }, (error) => {
-                    setEmailStatus(false);
-                    console.log(error.text);
-                    setShowToast(true);
-                });
+    function sendEmail(e){
+        e.preventDefault(e);
+            axios.post('http://localhost:5000/send_email', {
+                name,
+                email,
+                subject,
+                message
+            }).then(() => {
+                setEmailStatus(true);
+                closeModal();
+                setShowToast(true);
+            }, (error) => {
+                setEmailStatus(false);
+                console.log(error.text);
+                setShowToast(true);
+            });
             e.target.reset();
+    }
 
-        }
-    };
+    // const sendEmail = (e) => {
+    //     e.preventDefault();
+    //
+    //     if (form.current.checkValidity()) {
+    //         emailjs.sendForm('service_i0961f7', 'template_v2dgly9', form.current, 'nVRq3VPb4X4R9hGlf')
+    //             .then((result) => {
+    //                 setEmailStatus(true);
+    //                 console.log(result.text);
+    //                 closeModal();
+    //                 setShowToast(true);
+    //             }, (error) => {
+    //                 setEmailStatus(false);
+    //                 console.log(error.text);
+    //                 setShowToast(true);
+    //             });
+    //         e.target.reset();
+    //
+    //     }
+    // };
 
     return (
         // <section>
@@ -48,27 +76,19 @@ export default function ContactFormModal({showModal, closeModal}) {
                 <Form ref={form} onSubmit={sendEmail}>
                     <Modal.Body>
                         <Form.Group controlId="formBasicName" className="mb-3">
-                            <FloatingLabel controlId="user_name" label="Full Name">
-                                <Form.Control type="text" name="user_name" placeholder="Enter your full name" required/>
-                            </FloatingLabel>
+                                <Form.Control size="sm" name="user_name" placeholder="Full Name" onChange={(e)=> setName(e.target.value)} required/>
                         </Form.Group>
 
                         <Form.Group controlId="formBasicEmail" className="mb-3">
-                            <FloatingLabel controlId="user_email" label="Email">
-                                <Form.Control type="email" name="user_email" placeholder="Enter your email" required/>
-                            </FloatingLabel>
+                                <Form.Control size="sm" type="email" name="user_email" placeholder="Email" onChange={(e)=> setEmail(e.target.value)} required/>
                         </Form.Group>
 
                         <Form.Group controlId="formBasicSubject" className="mb-3">
-                            <FloatingLabel controlId="subject" label="Subject">
-                                <Form.Control type="text" name="subject" placeholder="Enter the subject" required/>
-                            </FloatingLabel>
+                                <Form.Control size="sm" name="subject" placeholder="Enter the subject" onChange={(e)=> setSubject(e.target.value)} required/>
                         </Form.Group>
                         <Form.Group controlId="formBasicMessage" className="mb-3">
-                            <FloatingLabel controlId="message" label="Message">
-                                <Form.Control as="textarea" name="message" placeholder="Enter your message" rows={3}
+                                <Form.Control size="sm" as="textarea" name="message" placeholder="Enter your message" onChange={(e)=> setMessage(e.target.value)} rows={3}
                                               required/>
-                            </FloatingLabel>
                         </Form.Group>
                     </Modal.Body>
 

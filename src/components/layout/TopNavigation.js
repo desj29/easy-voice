@@ -55,10 +55,20 @@ export default function TopNavigation() {
                                     <NavDropdown.Item className="dropdown1">Products</NavDropdown.Item>
                                 </LinkContainer>
                             </NavDropdown>
-
-                            <LinkContainer to="/contact">
-                                <Nav.Link><span className="text-nowrap">Contact Us</span></Nav.Link>
-                            </LinkContainer>
+                            <NavDropdown title="Info">
+                                <LinkContainer to="/about-us">
+                                    <NavDropdown.Item className="dropdown1">About Us</NavDropdown.Item>
+                                </LinkContainer>
+                                <LinkContainer to="/contact">
+                                    <NavDropdown.Item className="dropdown1">Contact Us</NavDropdown.Item>
+                                </LinkContainer>
+                            </NavDropdown>
+                            {/*<LinkContainer to="/about-us">*/}
+                            {/*    <Nav.Link><span className="text-nowrap">About Us</span></Nav.Link>*/}
+                            {/*</LinkContainer>*/}
+                            {/*<LinkContainer to="/contact">*/}
+                            {/*    <Nav.Link><span className="text-nowrap">Contact Us</span></Nav.Link>*/}
+                            {/*</LinkContainer>*/}
                             <Nav.Link as="a" href="https://pbx.easyvoice.us/" target="_blank" rel="noopener noreferrer">
                                 <span className="text-nowrap">Log In</span>
                             </Nav.Link>

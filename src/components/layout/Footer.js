@@ -22,7 +22,7 @@ export default function Footer() {
                             <LinkContainer to="/">
                                 <p className="linkText">Home</p>
                             </LinkContainer>
-                            <LinkContainer to="/contact">
+                            <LinkContainer to="/about-us">
                                 <p className="linkText">About Us</p>
                             </LinkContainer>
                             <LinkContainer to="/contact">

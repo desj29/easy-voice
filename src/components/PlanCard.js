@@ -24,7 +24,7 @@ export default function PlanCard({data, yearly, flip}) {
     return (
         <Card className="m-2 plan-card">
             <Card.Header>
-                <h1 className="text-center">{id === 2 ? <>Gold <br/>Package</> : productName}</h1>
+                <h1 className="text-center">{id === 3 ? <>Premium <br/>Plan</> : productName}</h1>
                 <h3 className="text-center"><Badge pill
                                                    className={badge}>${yearly ? (price * 10 * numPhones[id]).toFixed(2) : (price * numPhones[id]).toFixed(2)}{yearly ? " /year" : " /month"}</Badge>
                 </h3>

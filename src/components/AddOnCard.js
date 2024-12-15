@@ -11,7 +11,7 @@ export default function AddOnCard({data}) {
     const {addToAddonCart, cartAddonItems} = useContext(ShopContext);
 
     return (
-        <Card className="product-card">
+        <Card className="product-card pt-3">
             <Card.Img variant="top" src={image} className="card-img-top"/>
             <Card.Body className="text-center">
                 <Card.Title>

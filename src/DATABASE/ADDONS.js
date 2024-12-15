@@ -5,11 +5,11 @@ import hotel from "../assets/AdobeStock_579459725.webp";
 export const ADDONS = [
     {
         id: 1,
-        productName: "Microsoft Teams",
+        productName: "MS Teams Integration ",
         price: 2.00,
         per: "user",
         image: teams,
-        description: "Enable seamless communication between Microsoft Teams users and external phone services. Make outbound calls directly from Teams using PBX resources, offering your business a comprehensive communication solution."
+        description: "MS Teams facilitates collaboration with chat, video conferencing, file sharing, and integration with Microsoft 365 tools."
     },
     {
         id: 2,

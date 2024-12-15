@@ -42,3 +42,8 @@ code {
     opacity: 50%;
     border-color: white !important;
 }
+.siteContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
