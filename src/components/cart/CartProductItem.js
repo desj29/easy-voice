@@ -1,7 +1,6 @@
-import React, {useContext, useEffect, useState} from "react";
+import React, {useContext} from "react";
 import {ShopContext} from "../../context/shop-context";
 import "../../styling/PlanAndCart.css";
-import {Form} from "react-bootstrap";
 import {FaTrashCan} from "react-icons/fa6";
 
 

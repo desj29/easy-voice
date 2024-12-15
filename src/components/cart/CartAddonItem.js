@@ -11,7 +11,7 @@ export default function CartAddonItem({data}) {
     const {cartAddonItems, removeFromAddonCart, updateAddonCount, updateYearlyState} = useContext(ShopContext);
     useEffect(() => {
         updateYearlyState(data.id, yearly);
-    }, [yearly]);
+    }, [data.id, updateYearlyState, yearly]);
 
     function handleInputChange(event, id) {
         const value = parseInt(event.target.value, 10);

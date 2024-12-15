@@ -1,4 +1,4 @@
-import {Badge, Button, Card} from "react-bootstrap";
+import {Button, Card} from "react-bootstrap";
 import React, {useContext} from "react";
 import {ShopContext} from "../context/shop-context";
 import "../styling/ProductPage.css";

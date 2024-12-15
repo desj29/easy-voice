@@ -50,6 +50,7 @@ const CheckOutPage = () => {
                                 </tr>
                             );
                         }
+                        return null;
                     })}
                     {ADDONS.map((addons) => {
                         if (cartAddonItems[addons.id] !== 0) {
@@ -59,6 +60,8 @@ const CheckOutPage = () => {
                                 </tr>
                             );
                         }
+                        return null;
+
                     })}
                     {PRODUCTS.map((products) => {
                         if (cartProductItems[products.id] !== 0) {
@@ -68,6 +71,8 @@ const CheckOutPage = () => {
                                 </tr>
                             );
                         }
+                        return null;
+
                     })}
                     </tbody>
 

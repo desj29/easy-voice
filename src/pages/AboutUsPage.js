@@ -1,11 +1,7 @@
 import {Col, Container, Image, Row} from "react-bootstrap";
 import "../styling/AboutUs.css";
-import {FaPhoneAlt} from "react-icons/fa";
-import {MdEmail} from "react-icons/md";
 import aboutArt from "../assets/AboutArt.jpeg";
 import transition from "../components/layout/transition";
-import {ADDONS} from "../DATABASE/ADDONS";
-import AddOnCard from "../components/AddOnCard";
 import React from "react";
 
 

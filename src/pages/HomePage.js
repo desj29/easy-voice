@@ -6,7 +6,6 @@ import cloudImg from "../assets/carousel/Cloud.webp";
 import phone from "../assets/WomanOnPhone.webp";
 import guy from "../assets/ManOnPhoneAndLaptop.webp";
 import team from "../assets/CallCenter.webp";
-import {motion} from "framer-motion"
 import transition from "../components/layout/transition";
 
 const HomePage = () => {

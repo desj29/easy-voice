@@ -7,14 +7,10 @@ import {FaTrashCan} from "react-icons/fa6";
 
 export default function CartPlanItem({data}) {
     const [yearly, setYearly] = useState(false);
-    const {id, badge, productName, price} = data;
+    const {id, productName, price} = data;
     const {
         cartPlanItems,
-        addToPlanCart,
         removeFromPlanCart,
-        updateCartItemCount,
-        removePhone,
-        addPhone,
         numPhones,
         updatePhoneCount,
         updateYearlyState
@@ -22,7 +18,7 @@ export default function CartPlanItem({data}) {
 
     useEffect(() => {
         updateYearlyState(data.id, yearly);
-    }, [yearly]);
+    }, [data.id, updateYearlyState, yearly]);
 
     function handleInputChange(event, id) {
         const value = parseInt(event.target.value, 10);

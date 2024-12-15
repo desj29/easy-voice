@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {BrowserRouter, Route, Routes, useLocation} from "react-router-dom";
-import React, {lazy, Suspense, useState} from "react";
+import {Route, Routes, useLocation} from "react-router-dom";
+import React, {lazy, Suspense} from "react";
 import './styling/App.css';
 import Layout from "./components/layout/Layout";
 import Home from "./pages/HomePage";
