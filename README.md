@@ -37,6 +37,13 @@ locally for testing.
 
    This command reads the Dockerfile in the current directory and builds a Docker image named `your-image-name`.
 
+## Export Image to archive file
+   This allows the image to uploaded as a file.
+
+   ```bash
+   docker save easy-voice-web:latest | gzip > easy-voice-web.tar.gz
+   ```
+
 ## Build for Cloud Run
 
 cd easy-voice root folder
