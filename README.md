@@ -32,7 +32,7 @@ locally for testing.
    your choice for the Docker image.
 
     ```bash
-    docker build -t your-image-name .
+    docker build --platform=linux/amd64 -t easy-voice-web .
     ```
 
    This command reads the Dockerfile in the current directory and builds a Docker image named `your-image-name`.
