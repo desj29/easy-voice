@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
-      - "443:443"
+      - "8443:8443"
     networks:
       - es-docker-net
     volumes:
