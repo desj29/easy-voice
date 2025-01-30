@@ -6,9 +6,9 @@ services:
     ports:
       - "8080:8080"
     networks:
-      - easy-stack-net
+      - es-docker-net
 #    volumes:
 #      - /export/hosts:/etc/nginx/certs
 networks:
-  easy-stack-net:
+  es-docker-net:
     external: true
