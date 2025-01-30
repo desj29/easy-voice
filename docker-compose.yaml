@@ -7,8 +7,8 @@ services:
       - "8080:8080"
     networks:
       - es-docker-net
-#    volumes:
-#      - /export/hosts:/etc/nginx/certs
+    volumes:
+      - easy-stack-ssl/_data/www.easyvoice.us:/etc/nginx/certs
 networks:
   es-docker-net:
     external: true
