@@ -21,7 +21,7 @@ export const ADDONS = [
     },
     {
         id: 3,
-        productName: "Vital PBX Hotel Management",
+        productName: "Easy PBX Hotel Management",
         price: 200,
         per: "month",
         image: hotel,
