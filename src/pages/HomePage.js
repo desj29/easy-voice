@@ -47,7 +47,7 @@ const HomePage = () => {
                             </motion.h1>
                             <hr className="styledGradient"/>
                             <p className="lead">
-                                For over 15 years, Easy Voice LLC has been a dedicated supporter of the business sector,
+                                Since 2017, Easy Voice LLC has been a dedicated supporter of the business sector,
                                 providing a range of comprehensive solutions for enterprises. Our offerings include
                                 versatile Cloud Services, advanced Cloud-Based PBX Systems, and customized development
                                 solutions tailored to meet diverse business needs.
