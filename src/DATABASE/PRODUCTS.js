@@ -44,7 +44,7 @@ export const PRODUCTS = [
     {
         id: 1,
         productName: "Yealink T31G",
-        price: 69.95,
+        price: 56.40,
         image: T31G,
         category: "phones",
         description: "Powerful but simple phone with a small footprint. Great for lobbies, labs, and classrooms.",
@@ -60,7 +60,7 @@ export const PRODUCTS = [
     {
         id: 2,
         productName: "Yealink T33G",
-        price: 89.95,
+        price: 74.95,
         image: T33G,
         category: "phones",
         description: "High quality and cost effective. This color screen phone is perfect for small and large office settings.",
@@ -76,7 +76,7 @@ export const PRODUCTS = [
     {
         id: 3,
         productName: "Yealink T53W",
-        price: 154.95,
+        price: 106.95,
         image: T53W,
         category: "phones",
         description: "This elegant, entry-level executive phone is powerful and maximizes efficiency with included Wi-Fi and Bluetooth.",
@@ -92,7 +92,7 @@ export const PRODUCTS = [
     {
         id: 4,
         productName: "Yealink T54W",
-        price: 189.95,
+        price: 156.95,
         image: T54W,
         category: "phones",
         description: "Tailored to high performance executives and professionals. This expandable desk phone is the go-to for large volume workflows.",
@@ -108,7 +108,7 @@ export const PRODUCTS = [
     {
         id: 5,
         productName: "Yealink T57W",
-        price: 249.95,
+        price: 219.95,
         image: T57W,
         category: "phones",
         description: "The perfect business phone for busy professionals. Its adjustable 7-inch touch screen ensures comfort, rich visuals, and easy navigation.",
@@ -124,7 +124,7 @@ export const PRODUCTS = [
     {
         id: 6,
         productName: "Yealink T58W",
-        price: 374.95,
+        price: 291.60,
         image: T58W,
         category: "phones",
         description: "A brilliant touchscreen and built-in webcam make this top of the line phone perfect for visionary executives that love the cutting-edge.",
